@@ -1,10 +1,223 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>megatih.github.io</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Enthusiast Hub | John's Computer Workshop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h3 {
+            color: #2b5876;
+            margin-top: 0;
+        }
+        
+        .skills-section {
+            background-color: #e9ecef;
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .skill-badge {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        footer {
+            background-color: #2b2b2b;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>John's Tech Workshop</h1>
+            <p class="subtitle">Exploring the world of computer hardware, custom builds, and programming projects</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Tech Stack</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my digital workshop! I'm a passionate computer enthusiast with over 10 years of experience building custom PCs, tinkering with hardware, and developing software solutions. This site serves as a portfolio of my projects and a knowledge base for fellow tech enthusiasts.</p>
+            <p>When I'm not assembling new rigs or debugging code, you can find me exploring the latest tech trends, participating in hackathons, or helping others troubleshoot their computer issues on various forums.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Custom Water-Cooled Gaming PC</h3>
+                    <p>A high-performance gaming rig featuring custom loop water cooling, RGB lighting synchronization, and overclocked components for maximum performance.</p>
+                    <p><strong>Components:</strong> Ryzen 9 CPU, RTX 4080, 64GB RAM</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Home Server Setup</h3>
+                    <p>A multi-purpose home server running Proxmox for virtualization, with containers for media streaming, home automation, and network-wide ad blocking.</p>
+                    <p><strong>Services:</strong> Plex, Home Assistant, Pi-hole</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Mechanical Keyboard Build</h3>
+                    <p>Custom 75% mechanical keyboard with hot-swappable switches, custom keycaps, and programmable RGB lighting patterns.</p>
+                    <p><strong>Features:</strong> QMK firmware, lubed switches, sound dampening</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Tech Stack & Skills</h2>
+                <div class="skills-container">
+                    <span class="skill-badge">PC Building</span>
+                    <span class="skill-badge">Water Cooling</span>
+                    <span class="skill-badge">Overclocking</span>
+                    <span class="skill-badge">Linux</span>
+                    <span class="skill-badge">Windows</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Networking</span>
+                    <span class="skill-badge">3D Printing</span>
+                    <span class="skill-badge">Arduino</span>
+                    <span class="skill-badge">Raspberry Pi</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Recent Blog Posts</h2>
+            <article>
+                <h3>Why I Switched to Linux for My Daily Driver</h3>
+                <p>After years of using Windows, I made the leap to Linux. Here's my experience and why I'm not looking back...</p>
+                <a href="#">Read More</a>
+            </article>
+            
+            <article>
+                <h3>Budget PC Building Guide 2025</h3>
+                <p>Building a capable gaming PC doesn't have to break the bank. Check out my comprehensive guide to building a sub-$800 gaming rig...</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+                <a href="#">Discord</a>
+            </div>
+            <p>&copy; 2025 John's Tech Workshop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
