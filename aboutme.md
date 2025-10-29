@@ -14,4 +14,4 @@ My name is Megat Iskandar Hashim Bin Ismail. You can call me Ken for short. I am
 
 ### My story
 
-Feel free to [explore](https://megatih.github.io/) and let me know what you find useful to you.
+Feel free to [explore](https://megatih.github.io/) and let me know if you find anything useful or interesting.
