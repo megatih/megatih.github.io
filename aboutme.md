@@ -4,13 +4,14 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Megat Iskandar Hashim Bin Ismail. You can call me Ken for short. I am currently exploring:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+- Java programming
+- iOS, macOS and Swift programming
+- Python programming
+- Go programming
+- AI use in tech and our daily lives
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Feel free to explore and let me know what you found useful to you.
