@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Setting Up Ubuntu 24.04 on the Khadas Edge2 (AARCH64)"
+subtitle: Using the Khadas Edge2 for serious work and development
 date: 2025-10-29
 categories: [SBC, Ubuntu, Khadas]
 tags: [Khadas Edge2, Ubuntu 24.04, ARM64, SBC, Setup Guide]
