@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Just the essentials...
 ---
 
 My name is Megat Iskandar Hashim Bin Ismail. You can call me Ken for short. I am currently exploring:
