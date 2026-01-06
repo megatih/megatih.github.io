@@ -1,17 +1,25 @@
 ---
 layout: page
-title: About me
-subtitle: Just the essentials...
+title: About Me
+subtitle: Developer & Tech Enthusiast
 ---
 
-My name is Megat Iskandar Hashim Bin Ismail. You can call me Ken for short. I am currently exploring:
+Hello! I'm **Megat Iskandar**, but you can call me **Ken**.
 
-- Java programming
-- iOS, macOS and Swift programming
-- Python programming
-- Go programming
-- AI use in tech and our daily lives
+I am a passionate developer currently deep-diving into the world of software engineering and artificial intelligence. My journey is driven by a curiosity to understand how things work and a desire to build tools that solve real-world problems.
 
-### My story
+### Tech Stack & Interests
 
-Feel free to [explore](https://megatih.github.io/) and let me know if you find anything useful or interesting.
+I'm currently exploring and building with:
+
+*   **Java:** Building robust backend systems and applications.
+*   **Apple Ecosystem:** Crafting native experiences for iOS and macOS using **Swift**.
+*   **Python:** Scripting, automation, and data analysis.
+*   **Go:** exploring efficient, concurrent systems programming.
+*   **Artificial Intelligence:** Investigating practical AI applications in technology and daily life.
+
+### My Journey
+
+I believe in continuous learning and the power of open-source software. This website serves as a documentation of my projects, learnings, and thoughts on the ever-evolving tech landscape.
+
+Feel free to [explore my posts](/) or check out my code on [GitHub](https://github.com/megatih).
