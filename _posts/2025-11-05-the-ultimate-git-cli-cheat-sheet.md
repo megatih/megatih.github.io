@@ -4,7 +4,7 @@ title: "The Ultimate Git CLI Cheat Sheet: Master Version Control from Your Termi
 date: 2025-11-05
 categories: [development, git, cli, devtools]
 author: "megatih"
-description: "A comprehensive Git command-line reference for macOS, Linux, and Windows users. Learn configuration, branching, merging, and more with side-by-side examples."
+description: "Master Git from the command line with this cheat sheet for macOS, Linux, and Windows — covering configuration, branching, merging, stashing, tagging, and real-world workflows."
 tags: [git, devtools, productivity, cheatsheet]
 ---
 

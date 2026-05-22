@@ -6,6 +6,7 @@ cover-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHChart
 thumbnail-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png
 share-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png
 tags: [python, finance, technical-analysis, pyside6, projects]
+description: "Introducing PyMIHCharts — an open-source Python/PySide6 desktop app for TD Sequential technical analysis with smooth custom charting and yfinance stock data integration."
 comments: true
 ---
 
