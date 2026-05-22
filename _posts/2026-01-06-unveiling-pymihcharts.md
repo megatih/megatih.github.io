@@ -2,9 +2,9 @@
 layout: post
 title: Unveiling PyMIHCharts
 subtitle: A Professional Technical Analysis Tool for the Desktop
-cover-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png
-thumbnail-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png
-share-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png
+cover-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot_Lilac.png
+thumbnail-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot_Lilac.png
+share-img: https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot_Lilac.png
 tags: [python, finance, technical-analysis, pyside6, projects]
 description: "Introducing PyMIHCharts — an open-source Python/PySide6 desktop app for TD Sequential technical analysis with smooth custom charting and yfinance stock data integration."
 comments: true
@@ -20,7 +20,7 @@ PyMIHCharts is a Python desktop application designed for technical analysis, spe
 
 Instead of relying on web-based wrappers, this application uses **PySide6** and a custom-built rendering engine using `QPainter`. This ensures buttery-smooth navigation, pinch-to-zoom, and precise pixel-perfect rendering of complex chart elements.
 
-![PyMIHCharts Screenshot](https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot.png){: .mx-auto.d-block }
+![PyMIHCharts Screenshot](https://raw.githubusercontent.com/megatih/PyMIHCharts/main/PyMIHCharts_Screenshot_Lilac.png){: .mx-auto.d-block }
 
 ### Key Features
 
