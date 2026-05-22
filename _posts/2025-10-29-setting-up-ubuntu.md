@@ -6,7 +6,7 @@ date: 2025-10-29
 categories: [SBC, Ubuntu, Khadas]
 tags: [Khadas Edge2, Ubuntu 24.04, ARM64, SBC, Setup Guide]
 author: megatih
-description: "A complete guide to installing and configuring Ubuntu 24.04 on the Khadas Edge2 — from system setup to development tools."
+description: "Step-by-step guide to setting up Ubuntu 24.04 on the Khadas Edge2 ARM64 SBC — covering system configuration, developer tools, Java, Go, Python, VS Code, and AI tooling on the RK3588."
 ---
 
 # Setting Up Ubuntu 24.04 on the Khadas Edge2 (AARCH64)

@@ -125,7 +125,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "tech blog,software engineering,developer blog,programming,Python,Java,Swift,Go,Linux,Ubuntu,ARM64,SBC,Khadas Edge2,Git,version control,technical analysis,finance,open source,AI,artificial intelligence"
 
 ######################################
 # --- Colours / background image --- #
