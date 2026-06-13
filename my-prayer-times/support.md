@@ -21,9 +21,44 @@ surroundings.
 
 **The app differs from an official timetable**
 
-The app calculates a coordinate-based estimate using Malaysian criteria.
-Always follow the applicable official zone timetable or local religious
-authority when a difference matters.
+Confirm the authority or convention displayed under Prayer Times. Open the
+gear button to choose another method or restore Automatic by Location.
+
+The app calculates coordinate-based estimates. Named presets do not always
+reproduce every locality adjustment, safety margin, seasonal rule, or rounding
+policy used in an official timetable. Always follow the applicable official
+zone, locality, mosque, or religious-authority timetable when a difference
+matters.
+
+**The selected calculation method changed**
+
+Automatic by Location uses the country code returned by Apple's geocoding
+service. It selects a documented national default for supported countries and
+uses Umm al-Qura elsewhere. Choose a method manually if you want it to remain
+unchanged when your location changes.
+
+**How do I return to automatic selection?**
+
+Open the gear button, then select **Automatic by Location**. The app will use
+the detected country again and recalculate the schedule immediately.
+
+**Diyanet or Grande Mosquee de Paris does not exactly match a published table**
+
+These methods are labelled compatibility estimates. Their published schedules
+include institutional, locality, or seasonal policies that cannot be fully
+reproduced by a generic angle-only calculation.
+
+**Isyak differs during Ramadan when using Umm al-Qura**
+
+The app currently uses the documented 90-minute interval after Maghrib. It
+does not switch to a 120-minute Ramadan interval because that branch requires
+an authoritative Hijri-calendar source.
+
+**Tahrim intervals are not shown for Tehran or Leva Qum**
+
+Those are Jafari calculation presets and do not define the app's generic Sunni
+prohibited-prayer intervals. Follow the ruling of your marja or another
+competent religious authority.
 
 **Prayer times cannot be calculated at a high latitude**
 
@@ -54,9 +89,47 @@ persekitaran.
 
 **Waktu berbeza daripada jadual rasmi**
 
-Aplikasi mengira anggaran berasaskan koordinat menggunakan kriteria Malaysia.
-Ikuti jadual zon rasmi atau pihak berkuasa agama setempat apabila perbezaan
-tersebut penting.
+Semak pihak berkuasa atau konvensyen yang dipaparkan di bawah Waktu Solat.
+Buka butang gear untuk memilih kaedah lain atau memulihkan Automatik mengikut
+Lokasi.
+
+Aplikasi mengira anggaran berasaskan koordinat. Pratetap yang dinamakan tidak
+semestinya menghasilkan semula semua pelarasan kawasan, margin ihtiyat,
+peraturan bermusim atau dasar pembundaran dalam jadual rasmi. Ikuti jadual
+rasmi zon, kawasan, masjid atau pihak berkuasa agama apabila perbezaan tersebut
+penting.
+
+**Kaedah pengiraan yang dipilih berubah**
+
+Automatik mengikut Lokasi menggunakan kod negara yang diberikan oleh
+perkhidmatan geokod Apple. Aplikasi memilih konvensyen kebangsaan yang
+didokumenkan bagi negara yang disokong dan menggunakan Umm al-Qura di tempat
+lain. Pilih kaedah secara manual jika anda mahu kaedah itu kekal apabila lokasi
+berubah.
+
+**Bagaimanakah saya kembali kepada pemilihan automatik?**
+
+Buka butang gear, kemudian pilih **Automatik mengikut Lokasi**. Aplikasi akan
+menggunakan negara yang dikesan semula dan mengira jadual dengan serta-merta.
+
+**Diyanet atau Grande Mosquee de Paris tidak sepadan tepat dengan jadual
+terbitan**
+
+Kaedah ini dilabel sebagai anggaran keserasian. Jadual terbitannya merangkumi
+dasar institusi, kawasan atau bermusim yang tidak dapat dihasilkan sepenuhnya
+oleh pengiraan sudut umum.
+
+**Isyak berbeza pada Ramadan apabila menggunakan Umm al-Qura**
+
+Aplikasi kini menggunakan sela 90 minit selepas Maghrib. Aplikasi tidak
+bertukar kepada sela Ramadan 120 minit kerana cabang tersebut memerlukan
+sumber kalendar Hijri yang berautoriti.
+
+**Selang tahrim tidak dipaparkan untuk Tehran atau Leva Qum**
+
+Kedua-duanya ialah pratetap pengiraan Jaafari dan tidak mentakrifkan selang
+larangan solat Sunni umum aplikasi. Ikuti hukum marja anda atau pihak berkuasa
+agama lain yang berkelayakan.
 
 **Waktu tidak dapat dikira pada latitud tinggi**
 
@@ -67,4 +140,3 @@ menggantikan kaedah latitud tinggi yang lain secara senyap.
 Untuk sokongan, e-mel
 [megatiskandar@gmail.com](mailto:megatiskandar@gmail.com) dengan model peranti,
 versi iOS, lokasi anggaran dan penerangan masalah.
-

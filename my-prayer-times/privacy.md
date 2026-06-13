@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Prayer Times Privacy Policy
-subtitle: Effective June 13, 2026
+subtitle: Effective June 14, 2026
 permalink: /my-prayer-times/privacy/
 ---
 
@@ -19,6 +19,18 @@ country code, and time zone. The app does not retain a location history. You
 can deny or revoke location access in iOS Settings, but location-based
 features will then be unavailable.
 
+## Settings stored on the device
+
+The app stores your prayer calculation selection in standard iOS preferences.
+This consists of:
+
+- whether calculation-method selection is automatic or manual; and
+- the identifier of the manually selected authority or convention, when
+  applicable.
+
+These preferences do not contain your coordinates and are not sent to the
+developer. You can change them at any time from the app's Settings screen.
+
 ## Data collection
 
 The app:
@@ -29,8 +41,9 @@ The app:
 - does not upload prayer schedules or compass readings to the developer; and
 - does not store personal information on developer-operated servers.
 
-The app includes links to external websites. Those sites apply their own
-privacy policies when opened.
+The app includes links to calculation references and external authority,
+support, and policy websites. Those sites apply their own privacy policies
+when opened.
 
 ## Contact
 
@@ -52,6 +65,19 @@ tempat, kod negara dan zon waktu. Aplikasi tidak menyimpan sejarah lokasi.
 Anda boleh menolak atau membatalkan akses lokasi dalam Tetapan iOS, tetapi
 ciri berasaskan lokasi tidak akan tersedia.
 
+## Tetapan yang disimpan pada peranti
+
+Aplikasi menyimpan pilihan pengiraan waktu solat anda dalam keutamaan iOS
+standard. Maklumat ini terdiri daripada:
+
+- sama ada pemilihan kaedah pengiraan adalah automatik atau manual; dan
+- pengecam pihak berkuasa atau konvensyen yang dipilih secara manual, jika
+  berkenaan.
+
+Keutamaan ini tidak mengandungi koordinat anda dan tidak dihantar kepada
+pembangun. Anda boleh mengubahnya pada bila-bila masa melalui skrin Tetapan
+aplikasi.
+
 Aplikasi ini tidak mengandungi SDK iklan atau analitik, tidak menjejaki anda
 merentas aplikasi atau laman web, dan tidak menghantar jadual solat atau
 bacaan kompas kepada pembangun. Pautan luaran tertakluk pada dasar privasi
@@ -59,4 +85,3 @@ laman web berkenaan.
 
 Pertanyaan boleh dihantar kepada
 [megatiskandar@gmail.com](mailto:megatiskandar@gmail.com).
-
