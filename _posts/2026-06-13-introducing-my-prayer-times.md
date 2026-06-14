@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing My Prayer Times
-subtitle: Prayer times, notifications, widgets, tahrim guidance, and Qibla direction
+subtitle: A redesigned daily prayer experience for the app, Home Screen, and Lock Screen
 cover-img: /assets/img/my-prayer-times/app-icon.png
 thumbnail-img: /assets/img/my-prayer-times/app-icon.png
 share-img: /assets/img/my-prayer-times/app-icon.png
@@ -22,31 +22,35 @@ limitations visible.
 
 ![My Prayer Times app icon](/assets/img/my-prayer-times/app-icon.png){: .mx-auto.d-block style="max-width: 420px;" }
 
-> **Updated June 14, 2026:** The app now includes configurable local prayer
-> notifications, Home Screen and Lock Screen widgets, a prayer overview
-> dashboard, in-app language selection, and resilient foreground refresh.
+> **Updated June 15, 2026:** The app now has a redesigned Today dashboard, a
+> dedicated Qibla tab, searchable settings, day-phase styling, and small,
+> medium, and large Home Screen widgets alongside Lock Screen accessories.
+
+![The redesigned Today dashboard](/assets/img/my-prayer-times/today-dashboard.png){: .mx-auto.d-block style="max-width: 390px;" }
 
 ### What My Prayer Times Provides
 
-* **Prayer overview dashboard:** The opening card shows local time, the next
-  prayer and remaining time, and the current tahrim status, with shortcuts to
-  the complete lists.
+* **Focused Today dashboard:** The opening tab combines local date and
+  location, a prominent next-prayer countdown, current tahrim status, and the
+  complete schedule. Day-phase colour and highlighting make the current
+  context clear without competing with the times.
 * **Coordinate-based prayer times:** The app calculates Imsak, Subuh, Syuruk,
   Dhuha, Zohor, Asar, Maghrib, and Isyak for the detected location and local
   time zone.
 * **Location-aware calculation methods:** The app automatically selects a
   matching authority or convention for supported countries and falls back to
   Umm al-Qura University, Makkah elsewhere.
-* **Manual method selection:** A Settings screen lets you choose from 13
-  documented authority or convention presets. A manual choice is stored on the
-  device and remains active across launches and location changes.
+* **Searchable settings:** The Settings screen lets you search and choose from
+  13 documented authority or convention presets. A manual choice is stored on
+  the device and remains active across launches and location changes.
 * **Tahrim guidance:** It presents relevant intervals around Subuh, sunrise,
   solar noon, Asar, and sunset, with explanations and links to official
   references. The app does not apply the generic Sunni interval model to the
   Jafari Tehran and Leva Qum presets.
-* **Live Qibla compass:** Qibla direction is calculated geodesically and paired
-  with the device compass, using true north when available and a magnetic-north
-  fallback when necessary.
+* **Dedicated Qibla tab:** Qibla direction is calculated geodesically and
+  paired with the device compass, with bearing, heading, accuracy, and north
+  reference presented together. Sensor updates run only while the tab is
+  active.
 * **English and Bahasa Melayu:** The interface and explanatory content are
   available in both languages. You can follow the system language or select a
   language in the app.
@@ -54,9 +58,10 @@ limitations visible.
   for Subuh, Zohor, Asar, Maghrib, and Isyak individually. The app schedules
   up to 60 upcoming alerts on the device and refreshes the rolling schedule
   when the app is opened or its calculation inputs change.
-* **Next Prayer widgets:** Home Screen and Lock Screen widgets show the next
-  prayer with a live countdown. They use the last location, time zone,
-  calculation method, and language saved by the main app.
+* **Widgets designed for every size:** The small Home Screen widget focuses on
+  the next prayer, medium adds upcoming times, and large presents the full
+  schedule with tahrim context. Rectangular, inline, and circular Lock Screen
+  accessories remain available.
 * **Reliable foreground refresh:** Returning from the Home Screen or another
   app keeps the last valid prayer schedule and Qibla direction visible. The
   app refreshes a location only when the previous fix is more than five
@@ -135,33 +140,33 @@ menerangkan andaian dan batas pengiraannya? My Prayer Times menjawab persoalan
 tersebut melalui pengalaman SwiftUI pada peranti yang menggunakan kriteria
 konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
 
-> **Dikemas kini pada 14 Jun 2026:** Aplikasi kini mempunyai pemberitahuan
-> waktu solat yang boleh dikonfigurasi, widget Skrin Utama dan Skrin Kunci,
-> papan pemuka ringkasan solat, pemilihan bahasa dalam aplikasi dan penyegaran
-> latar hadapan yang lebih kukuh.
+> **Dikemas kini pada 15 Jun 2026:** Aplikasi kini mempunyai papan pemuka Hari
+> Ini yang direka semula, tab Kiblat khusus, Tetapan yang boleh dicari, gaya
+> fasa hari serta widget Skrin Utama kecil, sederhana dan besar di samping
+> aksesori Skrin Kunci.
 
 ### Ciri Utama
 
-* **Papan pemuka ringkasan solat:** Kad pembukaan memaparkan waktu setempat,
-  waktu solat seterusnya dan baki masa, serta status tahrim semasa, dengan
-  pintasan ke senarai lengkap.
+* **Papan pemuka Hari Ini:** Tab pembukaan menggabungkan tarikh dan lokasi,
+  kira detik solat seterusnya yang jelas, status tahrim semasa dan jadual
+  lengkap. Warna fasa hari dan sorotan menunjukkan konteks semasa dengan jelas.
 * **Waktu solat berasaskan koordinat:** Aplikasi mengira Imsak, Subuh, Syuruk,
   Dhuha, Zohor, Asar, Maghrib dan Isyak untuk lokasi serta zon waktu yang
   dikesan.
 * **Kaedah pengiraan berdasarkan lokasi:** Aplikasi memilih pihak berkuasa atau
   konvensyen yang sepadan secara automatik untuk negara yang disokong dan
   menggunakan Umm al-Qura University, Makkah sebagai pilihan sandaran.
-* **Pemilihan kaedah manual:** Skrin Tetapan membolehkan anda memilih daripada
-  13 pratetap pihak berkuasa atau konvensyen. Pilihan manual disimpan pada
-  peranti dan kekal digunakan selepas aplikasi dibuka semula atau lokasi
-  berubah.
+* **Tetapan yang boleh dicari:** Skrin Tetapan membolehkan anda mencari dan
+  memilih daripada 13 pratetap pihak berkuasa atau konvensyen. Pilihan manual
+  disimpan pada peranti dan kekal digunakan selepas aplikasi dibuka semula atau
+  lokasi berubah.
 * **Panduan tahrim:** Aplikasi memaparkan selang berkaitan Subuh, matahari
   terbit, tengah hari suria, Asar dan matahari terbenam, berserta penerangan
   serta pautan kepada rujukan rasmi. Model selang Sunni umum tidak digunakan
   untuk pratetap Jaafari Tehran dan Leva Qum.
-* **Kompas kiblat langsung:** Arah kiblat dikira secara geodesik dan digabungkan
-  dengan kompas peranti, menggunakan utara benar apabila tersedia serta utara
-  magnet sebagai pilihan kedua.
+* **Tab Kiblat khusus:** Arah kiblat dikira secara geodesik dan digabungkan
+  dengan kompas peranti. Bearing, arah, ketepatan dan rujukan utara dipaparkan
+  bersama, dan penderia hanya dikemas kini ketika tab digunakan.
 * **Bahasa Inggeris dan Bahasa Melayu:** Antara muka dan kandungan penerangan
   tersedia dalam kedua-dua bahasa. Anda boleh mengikut bahasa sistem atau
   memilih bahasa dalam aplikasi.
@@ -169,10 +174,10 @@ konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
   bagi Subuh, Zohor, Asar, Maghrib dan Isyak secara berasingan. Aplikasi
   menjadualkan sehingga 60 makluman akan datang pada peranti dan memperbaharui
   jadual berterusan apabila aplikasi dibuka atau input pengiraan berubah.
-* **Widget Solat Seterusnya:** Widget Skrin Utama dan Skrin Kunci memaparkan
-  waktu solat seterusnya dengan kira detik langsung. Widget menggunakan
-  lokasi, zon waktu, kaedah pengiraan dan bahasa terakhir yang disimpan oleh
-  aplikasi utama.
+* **Widget untuk setiap saiz:** Widget kecil memfokuskan solat seterusnya,
+  widget sederhana menambah waktu akan datang, dan widget besar memaparkan
+  jadual lengkap bersama konteks tahrim. Aksesori Skrin Kunci segi empat tepat,
+  sebaris dan bulat turut tersedia.
 * **Penyegaran latar hadapan yang kukuh:** Apabila kembali daripada Skrin Utama
   atau aplikasi lain, jadual solat dan arah kiblat sah yang terakhir kekal
   dipaparkan. Aplikasi hanya menyegarkan lokasi apabila penentuan sebelumnya

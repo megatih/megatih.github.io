@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Prayer Times
-subtitle: Prayer notifications, widgets, location-aware calculations, and Qibla direction
+subtitle: A focused daily prayer dashboard, complete widgets, notifications, and Qibla direction
 permalink: /my-prayer-times/
 ---
 
@@ -14,17 +14,36 @@ You can override the automatic choice in Settings, and the manual selection
 remains active across launches and location changes.
 
 - No account, advertising, analytics, or tracking
-- Prayer overview with local time, next prayer, remaining time, and tahrim status
+- A redesigned Today dashboard with day-phase colour, next-prayer focus, and the complete schedule
 - Location-based calculations for local prayer times
 - 13 selectable authority and convention presets
 - Automatic matching for supported countries with an Umm al-Qura fallback
-- Persistent manual selection and transparent calculation parameters
-- Qibla direction with true-north and magnetic-north handling
+- Searchable method selection, persistent manual choices, and transparent calculation parameters
+- A dedicated Qibla tab with bearing, heading, accuracy, and north-reference status
 - System, English, and Bahasa Melayu language choices
 - Configurable local notifications for the five obligatory prayers
-- Next Prayer widgets for the Home Screen and Lock Screen
+- Small, medium, and large Home Screen widgets plus Lock Screen accessories
 - Resilient foreground location refresh without background location access
 - Designed for iOS 17 and later
+
+![The redesigned Today dashboard in My Prayer Times](/assets/img/my-prayer-times/today-dashboard.png){: .mx-auto.d-block style="max-width: 390px;" }
+
+## Today and Qibla
+
+The **Today** tab puts the information needed throughout the day first: the
+current location and date, the next prayer and live countdown, the active
+tahrim status, and a complete prayer schedule with the current or upcoming
+event highlighted. Its background and accents adapt to the current part of the
+day while preserving system contrast, Dynamic Type, and familiar SwiftUI
+navigation.
+
+Tahrim guidance is available in a compact, expandable section. Calculation
+method, language, and notification controls remain available from Settings,
+with a searchable method picker for the 13 included presets.
+
+The **Qibla** tab gives the compass its own focused space. It shows the Qibla
+bearing, current device heading, compass accuracy, and whether true or magnetic
+north is being used. Compass updates are active only while this tab is in use.
 
 ## Notifications
 
@@ -41,17 +60,23 @@ or changing a calculation setting.
 No remote notification service or developer-operated notification server is
 used.
 
-## Next Prayer widgets
+## Home Screen and Lock Screen widgets
 
-The Next Prayer widget is available in small and medium Home Screen sizes and
-in rectangular, inline, and circular Lock Screen accessory families. It shows
-the next prayer and a live remaining-time countdown.
+The widgets use the same day-phase styling and information hierarchy as the
+app while making purposeful use of each size:
+
+- **Small:** the next prayer and live countdown at a glance.
+- **Medium:** the next prayer plus the upcoming prayer sequence.
+- **Large:** the complete daily schedule, next-prayer emphasis, and current
+  tahrim guidance.
+- **Lock Screen:** rectangular, inline, and circular next-prayer accessories.
 
 Open the main app once to provide the widget with a current location and
 calculation setting. The app stores one widget snapshot in its private App
 Group. The widget stops using a snapshot after seven days and asks you to open
 the app to refresh it. After travelling, open the app so the widget can use
-the new location and time zone.
+the new location and time zone. Tapping a Home Screen widget opens the Today
+tab.
 
 ## Foreground location behavior
 
@@ -96,17 +121,35 @@ Tetapan, dan pilihan manual kekal digunakan selepas aplikasi dibuka semula
 atau lokasi berubah.
 
 - Tiada akaun, iklan, analitik atau penjejakan
-- Ringkasan solat dengan waktu setempat, waktu seterusnya, baki masa dan status tahrim
+- Papan pemuka Hari Ini dengan warna fasa hari, fokus solat seterusnya dan jadual lengkap
 - Pengiraan berdasarkan lokasi untuk waktu solat setempat
 - 13 pratetap pihak berkuasa dan konvensyen
 - Padanan automatik bagi negara yang disokong dengan sandaran Umm al-Qura
-- Pilihan manual yang kekal serta parameter pengiraan yang telus
-- Arah kiblat dengan pengendalian utara benar dan utara magnet
+- Pemilihan kaedah yang boleh dicari, pilihan manual yang kekal serta parameter pengiraan yang telus
+- Tab Kiblat khusus dengan bearing, arah peranti, ketepatan dan status rujukan utara
 - Pilihan bahasa Sistem, Bahasa Inggeris dan Bahasa Melayu
 - Pemberitahuan setempat yang boleh dikonfigurasi bagi lima waktu solat fardu
-- Widget Solat Seterusnya untuk Skrin Utama dan Skrin Kunci
+- Widget Skrin Utama kecil, sederhana dan besar serta aksesori Skrin Kunci
 - Penyegaran lokasi latar hadapan yang kukuh tanpa akses lokasi latar belakang
 - Direka untuk iOS 17 dan lebih baharu
+
+![Papan pemuka Hari Ini yang direka semula](/assets/img/my-prayer-times/today-dashboard.png){: .mx-auto.d-block style="max-width: 390px;" }
+
+## Hari Ini dan Kiblat
+
+Tab **Hari Ini** mengutamakan maklumat yang diperlukan sepanjang hari: lokasi
+dan tarikh semasa, solat seterusnya dengan kira detik langsung, status tahrim
+aktif serta jadual solat lengkap dengan waktu semasa atau akan datang
+diserlahkan. Latar dan warna aksen berubah mengikut fasa hari sambil
+mengekalkan kontras sistem, Dynamic Type dan navigasi SwiftUI yang lazim.
+
+Panduan tahrim tersedia dalam bahagian padat yang boleh dikembangkan. Tetapan
+kaedah pengiraan, bahasa dan pemberitahuan kekal mudah dicapai, termasuk
+pemilih kaedah yang boleh dicari bagi 13 pratetap.
+
+Tab **Kiblat** menyediakan ruang khusus untuk kompas. Ia memaparkan bearing
+Kiblat, arah semasa peranti, ketepatan kompas dan sama ada utara benar atau
+utara magnet digunakan. Kemas kini kompas hanya aktif ketika tab ini digunakan.
 
 ## Pemberitahuan
 
@@ -123,18 +166,23 @@ semula selepas perjalanan atau perubahan tetapan pengiraan.
 Tiada perkhidmatan pemberitahuan jauh atau pelayan pemberitahuan yang
 dikendalikan oleh pembangun digunakan.
 
-## Widget Solat Seterusnya
+## Widget Skrin Utama dan Skrin Kunci
 
-Widget Solat Seterusnya tersedia dalam saiz kecil dan sederhana pada Skrin
-Utama serta keluarga aksesori segi empat tepat, sebaris dan bulat pada Skrin
-Kunci. Widget memaparkan waktu solat seterusnya dan kira detik baki masa secara
-langsung.
+Widget menggunakan gaya fasa hari dan hierarki maklumat yang sama seperti
+aplikasi, dengan kandungan yang disesuaikan untuk setiap saiz:
+
+- **Kecil:** solat seterusnya dan kira detik langsung.
+- **Sederhana:** solat seterusnya bersama urutan waktu yang akan datang.
+- **Besar:** jadual harian lengkap, penekanan solat seterusnya dan panduan
+  tahrim semasa.
+- **Skrin Kunci:** aksesori segi empat tepat, sebaris dan bulat.
 
 Buka aplikasi utama sekali untuk memberikan lokasi semasa dan tetapan
 pengiraan kepada widget. Aplikasi menyimpan satu petikan widget dalam App Group
 peribadinya. Widget berhenti menggunakan petikan selepas tujuh hari dan meminta
 anda membuka aplikasi untuk menyegarkannya. Selepas perjalanan, buka aplikasi
-supaya widget menggunakan lokasi dan zon waktu baharu.
+supaya widget menggunakan lokasi dan zon waktu baharu. Menekan widget Skrin
+Utama membuka tab Hari Ini.
 
 ## Pengendalian lokasi latar hadapan
 

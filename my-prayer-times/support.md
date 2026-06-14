@@ -90,8 +90,22 @@ and calculation method.
 
 Add My Prayer Times from the iOS widget gallery, then open the main app at
 least once so it can save the current location and calculation method for the
-widget. Small and medium Home Screen widgets and rectangular, inline, and
-circular Lock Screen accessories are supported.
+widget. Small, medium, and large Home Screen widgets and rectangular, inline,
+and circular Lock Screen accessories are supported.
+
+**How do I add or change to the large widget?**
+
+Touch and hold an empty area of the Home Screen, tap **Edit**, then **Add
+Widget**. Select My Prayer Times and swipe through its previews until the large
+schedule appears, then tap **Add Widget**. iOS does not resize every existing
+widget in place, so remove the current widget and add the large version when a
+size option is not offered by **Edit Widget**.
+
+If the large preview is missing after updating the app, open My Prayer Times
+once, restart the iPhone, and check the widget gallery again. If necessary,
+remove the old widget and reinstall the app so iOS refreshes its cached
+WidgetKit configuration. The current release declares small, medium, and large
+Home Screen support.
 
 **Why does the widget ask me to open the app?**
 
@@ -222,7 +236,22 @@ lokasi, zon waktu dan kaedah pengiraan semasa.
 Tambah My Prayer Times daripada galeri widget iOS, kemudian buka aplikasi utama
 sekurang-kurangnya sekali supaya lokasi semasa dan kaedah pengiraan dapat
 disimpan untuk widget. Widget kecil dan sederhana pada Skrin Utama serta
-aksesori segi empat tepat, sebaris dan bulat pada Skrin Kunci disokong.
+widget besar, serta aksesori segi empat tepat, sebaris dan bulat pada Skrin
+Kunci disokong.
+
+**Bagaimanakah saya menambah atau menukar kepada widget besar?**
+
+Tekan lama ruang kosong pada Skrin Utama, tekan **Edit**, kemudian **Add
+Widget**. Pilih My Prayer Times dan leret pratonton sehingga jadual besar
+dipaparkan, kemudian tekan **Add Widget**. iOS tidak membenarkan semua widget
+sedia ada ditukar saiz secara terus. Buang widget semasa dan tambah versi besar
+jika pilihan saiz tidak tersedia melalui **Edit Widget**.
+
+Jika pratonton besar tiada selepas aplikasi dikemas kini, buka My Prayer Times
+sekali, mulakan semula iPhone dan semak galeri widget sekali lagi. Jika perlu,
+buang widget lama dan pasang semula aplikasi supaya iOS menyegarkan konfigurasi
+WidgetKit yang dicache. Keluaran semasa mengisytiharkan sokongan Skrin Utama
+kecil, sederhana dan besar.
 
 **Mengapakah widget meminta saya membuka aplikasi?**
 

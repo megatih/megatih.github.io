@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Prayer Times Privacy Policy
-subtitle: Effective June 14, 2026
+subtitle: Effective June 15, 2026
 permalink: /my-prayer-times/privacy/
 ---
 
@@ -36,9 +36,12 @@ contains:
 - the selected language; and
 - the date and time when the snapshot was saved.
 
-The snapshot is used locally to calculate the next prayer. It is overwritten
-when relevant inputs change, is not a location history, and is treated as stale
-by the widget after seven days. It is not sent to the developer.
+The snapshot is used locally to calculate the prayer schedule, current tahrim
+guidance, and next-prayer timeline shown by the supported widget sizes. These
+derived results do not add new stored personal data. The snapshot is
+overwritten when relevant inputs change, is not a location history, and is
+treated as stale by the widget after seven days. It is not sent to the
+developer.
 
 ## Preferences stored on the device
 
@@ -118,9 +121,12 @@ widgetnya. Petikan tersebut mengandungi:
 - bahasa pilihan; dan
 - tarikh serta masa petikan disimpan.
 
-Petikan digunakan secara setempat untuk mengira waktu solat seterusnya. Petikan
-digantikan apabila input berkaitan berubah, bukan sejarah lokasi, dan dianggap
-lapuk oleh widget selepas tujuh hari. Petikan tidak dihantar kepada pembangun.
+Petikan digunakan secara setempat untuk mengira jadual solat, panduan tahrim
+semasa dan garis masa solat seterusnya yang dipaparkan oleh saiz widget yang
+disokong. Keputusan terbitan ini tidak menambah data peribadi tersimpan yang
+baharu. Petikan digantikan apabila input berkaitan berubah, bukan sejarah
+lokasi, dan dianggap lapuk selepas tujuh hari. Petikan tidak dihantar kepada
+pembangun.
 
 ## Keutamaan yang disimpan pada peranti
 
