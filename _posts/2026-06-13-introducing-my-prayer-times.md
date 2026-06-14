@@ -6,7 +6,7 @@ cover-img: /assets/img/my-prayer-times/app-icon.png
 thumbnail-img: /assets/img/my-prayer-times/app-icon.png
 share-img: /assets/img/my-prayer-times/app-icon.png
 tags: [swift, ios, swiftui, projects, prayer-times, qibla]
-description: "Introducing My Prayer Times, a privacy-focused iPhone and iPad app with location-aware prayer calculation methods, tahrim guidance, and Qibla direction."
+description: "Introducing My Prayer Times, a privacy-focused iPhone and iPad app with a prayer overview dashboard, location-aware calculation methods, tahrim guidance, and live Qibla direction."
 comments: true
 ---
 
@@ -22,8 +22,15 @@ limitations visible.
 
 ![My Prayer Times app icon](/assets/img/my-prayer-times/app-icon.png){: .mx-auto.d-block style="max-width: 420px;" }
 
+> **Updated June 14, 2026:** The app now includes a prayer overview dashboard,
+> in-app language selection, more efficient calculations, and resilient
+> location refresh when returning from another app.
+
 ### What My Prayer Times Provides
 
+* **Prayer overview dashboard:** The opening card shows local time, the next
+  prayer and remaining time, and the current tahrim status, with shortcuts to
+  the complete lists.
 * **Coordinate-based prayer times:** The app calculates Imsak, Subuh, Syuruk,
   Dhuha, Zohor, Asar, Maghrib, and Isyak for the detected location and local
   time zone.
@@ -41,7 +48,13 @@ limitations visible.
   with the device compass, using true north when available and a magnetic-north
   fallback when necessary.
 * **English and Bahasa Melayu:** The interface and explanatory content are
-  available in both languages.
+  available in both languages. You can follow the system language or select a
+  language in the app.
+* **Reliable foreground refresh:** Returning from the Home Screen or another
+  app keeps the last valid prayer schedule and Qibla direction visible. The
+  app refreshes a location only when the previous fix is more than five
+  minutes old, retries temporary failures, and uses bounded timeouts so the
+  interface does not remain stuck waiting for a callback.
 * **Privacy-focused operation:** There are no accounts, advertisements,
   analytics, or cross-app tracking.
 
@@ -81,8 +94,9 @@ not retain a location history or send prayer schedules and compass readings to
 developer-operated servers.
 
 The app stores only the selected automatic or manual calculation setting and
-the selected authority identifier in iOS preferences. It does not store a
-location history.
+the selected authority identifier, plus an optional in-app language choice, in
+iOS preferences. It does not store a location history or request background
+location access.
 
 You can read more about the app, its privacy practices, and troubleshooting
 guidance at the links below.
@@ -107,8 +121,16 @@ menerangkan andaian dan batas pengiraannya? My Prayer Times menjawab persoalan
 tersebut melalui pengalaman SwiftUI pada peranti yang menggunakan kriteria
 konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
 
+> **Dikemas kini pada 14 Jun 2026:** Aplikasi kini mempunyai papan pemuka
+> ringkasan solat, pemilihan bahasa dalam aplikasi, pengiraan yang lebih cekap
+> dan penyegaran lokasi yang lebih kukuh apabila kembali daripada aplikasi
+> lain.
+
 ### Ciri Utama
 
+* **Papan pemuka ringkasan solat:** Kad pembukaan memaparkan waktu setempat,
+  waktu solat seterusnya dan baki masa, serta status tahrim semasa, dengan
+  pintasan ke senarai lengkap.
 * **Waktu solat berasaskan koordinat:** Aplikasi mengira Imsak, Subuh, Syuruk,
   Dhuha, Zohor, Asar, Maghrib dan Isyak untuk lokasi serta zon waktu yang
   dikesan.
@@ -127,7 +149,13 @@ konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
   dengan kompas peranti, menggunakan utara benar apabila tersedia serta utara
   magnet sebagai pilihan kedua.
 * **Bahasa Inggeris dan Bahasa Melayu:** Antara muka dan kandungan penerangan
-  tersedia dalam kedua-dua bahasa.
+  tersedia dalam kedua-dua bahasa. Anda boleh mengikut bahasa sistem atau
+  memilih bahasa dalam aplikasi.
+* **Penyegaran latar hadapan yang kukuh:** Apabila kembali daripada Skrin Utama
+  atau aplikasi lain, jadual solat dan arah kiblat sah yang terakhir kekal
+  dipaparkan. Aplikasi hanya menyegarkan lokasi apabila penentuan sebelumnya
+  melebihi lima minit, mencuba semula kegagalan sementara dan menggunakan had
+  masa supaya antara muka tidak terus menunggu panggil balik.
 * **Mengutamakan privasi:** Tiada akaun, iklan, analitik atau penjejakan
   merentas aplikasi.
 
@@ -167,8 +195,9 @@ menyimpan sejarah lokasi atau menghantar jadual solat dan bacaan kompas kepada
 pelayan yang dikendalikan oleh pembangun.
 
 Aplikasi hanya menyimpan tetapan pengiraan automatik atau manual dan pengecam
-pihak berkuasa yang dipilih dalam keutamaan iOS. Aplikasi tidak menyimpan
-sejarah lokasi.
+pihak berkuasa yang dipilih, serta pilihan bahasa dalam aplikasi jika
+ditetapkan, dalam keutamaan iOS. Aplikasi tidak menyimpan sejarah lokasi atau
+meminta akses lokasi di latar belakang.
 
 Maklumat lanjut tentang aplikasi, amalan privasi dan panduan penyelesaian
 masalah tersedia melalui pautan di bawah.

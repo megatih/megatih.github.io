@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Prayer Times
-subtitle: Location-aware prayer calculation methods and Qibla direction
+subtitle: Prayer overview, location-aware calculation methods, and Qibla direction
 permalink: /my-prayer-times/
 ---
 
@@ -14,13 +14,27 @@ You can override the automatic choice in Settings, and the manual selection
 remains active across launches and location changes.
 
 - No account, advertising, analytics, or tracking
+- Prayer overview with local time, next prayer, remaining time, and tahrim status
 - Location-based calculations for local prayer times
 - 13 selectable authority and convention presets
 - Automatic matching for supported countries with an Umm al-Qura fallback
 - Persistent manual selection and transparent calculation parameters
 - Qibla direction with true-north and magnetic-north handling
-- English and Bahasa Melayu
+- System, English, and Bahasa Melayu language choices
+- Resilient foreground location refresh without background location access
 - Designed for iOS 17 and later
+
+## Foreground location behavior
+
+The app requests location only while it is in use. When you return from the
+Home Screen or another app, it keeps the last valid schedule and Qibla
+direction visible. A new location is requested only when the previous fix is
+more than five minutes old.
+
+Temporary Core Location failures are retried, and location and geocoding
+requests have bounded timeouts. If a refresh cannot complete, the previous
+valid result remains available rather than being replaced by an indefinite
+loading state.
 
 ## Available calculation methods
 
@@ -53,13 +67,27 @@ Tetapan, dan pilihan manual kekal digunakan selepas aplikasi dibuka semula
 atau lokasi berubah.
 
 - Tiada akaun, iklan, analitik atau penjejakan
+- Ringkasan solat dengan waktu setempat, waktu seterusnya, baki masa dan status tahrim
 - Pengiraan berdasarkan lokasi untuk waktu solat setempat
 - 13 pratetap pihak berkuasa dan konvensyen
 - Padanan automatik bagi negara yang disokong dengan sandaran Umm al-Qura
 - Pilihan manual yang kekal serta parameter pengiraan yang telus
 - Arah kiblat dengan pengendalian utara benar dan utara magnet
-- Bahasa Inggeris dan Bahasa Melayu
+- Pilihan bahasa Sistem, Bahasa Inggeris dan Bahasa Melayu
+- Penyegaran lokasi latar hadapan yang kukuh tanpa akses lokasi latar belakang
 - Direka untuk iOS 17 dan lebih baharu
+
+## Pengendalian lokasi latar hadapan
+
+Aplikasi hanya meminta lokasi semasa sedang digunakan. Apabila anda kembali
+daripada Skrin Utama atau aplikasi lain, jadual sah terakhir dan arah kiblat
+kekal dipaparkan. Lokasi baharu hanya diminta apabila penentuan sebelumnya
+melebihi lima minit.
+
+Kegagalan sementara Core Location akan dicuba semula, manakala permintaan
+lokasi dan geokod mempunyai had masa. Jika penyegaran tidak dapat diselesaikan,
+keputusan sah sebelumnya kekal tersedia dan tidak digantikan dengan keadaan
+memuat yang berterusan.
 
 ## Kaedah pengiraan yang tersedia
 

@@ -13,6 +13,18 @@ Enable Location Services for My Prayer Times in iOS Settings. Precise Location
 provides better results, especially for Qibla direction and locations near a
 time-zone boundary.
 
+**Location appears stuck after returning to the app**
+
+The current version keeps the last valid schedule and Qibla direction visible
+when you return from the Home Screen or another app. It requests a new
+location only when the previous fix is more than five minutes old and retries
+temporary failures automatically.
+
+If no valid result has ever been obtained, confirm that Location Services and
+While Using the App permission are enabled, then tap **Try Again**. You can
+also close and reopen the app after changing its permission in iOS Settings.
+The app does not require Always or background location access.
+
 **The compass appears inaccurate**
 
 Hold the device flat, move away from metal or magnets, and move the device in
@@ -41,6 +53,11 @@ unchanged when your location changes.
 
 Open the gear button, then select **Automatic by Location**. The app will use
 the detected country again and recalculate the schedule immediately.
+
+**How do I change the app language?**
+
+Open the gear button and choose **System Default**, **English**, or **Bahasa
+Melayu**. System Default follows the language selected in iOS Settings.
 
 **Diyanet or Grande Mosquee de Paris does not exactly match a published table**
 
@@ -81,6 +98,19 @@ Aktifkan Perkhidmatan Lokasi untuk My Prayer Times dalam Tetapan iOS. Lokasi
 Tepat memberikan keputusan yang lebih baik, khususnya untuk arah kiblat dan
 lokasi berhampiran sempadan zon waktu.
 
+**Lokasi kelihatan tersekat selepas kembali ke aplikasi**
+
+Versi semasa mengekalkan jadual sah terakhir dan arah kiblat apabila anda
+kembali daripada Skrin Utama atau aplikasi lain. Lokasi baharu hanya diminta
+apabila penentuan sebelumnya melebihi lima minit dan kegagalan sementara
+dicuba semula secara automatik.
+
+Jika tiada keputusan sah pernah diperoleh, pastikan Perkhidmatan Lokasi dan
+kebenaran Semasa Menggunakan Aplikasi diaktifkan, kemudian tekan **Cuba
+Lagi**. Anda juga boleh menutup dan membuka semula aplikasi selepas mengubah
+kebenaran dalam Tetapan iOS. Aplikasi tidak memerlukan akses lokasi Sentiasa
+atau latar belakang.
+
 **Kompas kelihatan tidak tepat**
 
 Pegang peranti secara mendatar, jauhkan daripada logam atau magnet, dan
@@ -111,6 +141,11 @@ berubah.
 
 Buka butang gear, kemudian pilih **Automatik mengikut Lokasi**. Aplikasi akan
 menggunakan negara yang dikesan semula dan mengira jadual dengan serta-merta.
+
+**Bagaimanakah saya menukar bahasa aplikasi?**
+
+Buka butang gear dan pilih **Lalai Sistem**, **English** atau **Bahasa
+Melayu**. Lalai Sistem mengikut bahasa yang dipilih dalam Tetapan iOS.
 
 **Diyanet atau Grande Mosquee de Paris tidak sepadan tepat dengan jadual
 terbitan**
