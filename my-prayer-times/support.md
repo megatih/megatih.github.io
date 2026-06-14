@@ -59,6 +59,49 @@ the detected country again and recalculate the schedule immediately.
 Open the gear button and choose **System Default**, **English**, or **Bahasa
 Melayu**. System Default follows the language selected in iOS Settings.
 
+**How do I enable prayer notifications?**
+
+Open the gear button, turn on **Prayer time notifications**, and allow alerts
+when iOS asks. You can then enable or disable Subuh, Zohor, Asar, Maghrib, and
+Isyak individually.
+
+If permission was previously denied, use **Open Settings** in the app or open
+iOS Settings and enable notifications for My Prayer Times.
+
+**Why did prayer notifications stop arriving?**
+
+The app uses local notifications and schedules a rolling set of up to 60
+upcoming alerts. iOS limits how many requests an app can keep pending, and the
+app does not run a remote notification server or guaranteed background renewal
+task.
+
+Reopen the app periodically to renew the schedule. Also reopen it after
+travelling, changing the calculation method or language, changing enabled
+prayers, or modifying notification permission. Exact delivery timing is
+managed by iOS.
+
+**Why is a notification in the wrong language or for the wrong location?**
+
+Open the app after changing its language or after travelling. The app rebuilds
+pending prayer notifications using the current language, location, time zone,
+and calculation method.
+
+**How do I set up the Next Prayer widget?**
+
+Add My Prayer Times from the iOS widget gallery, then open the main app at
+least once so it can save the current location and calculation method for the
+widget. Small and medium Home Screen widgets and rectangular, inline, and
+circular Lock Screen accessories are supported.
+
+**Why does the widget ask me to open the app?**
+
+The widget needs a snapshot created by the main app. It asks you to open the
+app if no snapshot exists or if the saved location is seven days old. Open the
+app after travelling so the widget receives the new location and time zone.
+
+Widget updates and timeline reload timing are managed by iOS, so a refresh may
+not appear immediately.
+
 **Diyanet or Grande Mosquee de Paris does not exactly match a published table**
 
 These methods are labelled compatibility estimates. Their published schedules
@@ -146,6 +189,50 @@ menggunakan negara yang dikesan semula dan mengira jadual dengan serta-merta.
 
 Buka butang gear dan pilih **Lalai Sistem**, **English** atau **Bahasa
 Melayu**. Lalai Sistem mengikut bahasa yang dipilih dalam Tetapan iOS.
+
+**Bagaimanakah saya mengaktifkan pemberitahuan waktu solat?**
+
+Buka butang gear, aktifkan **Pemberitahuan waktu solat**, kemudian benarkan
+makluman apabila diminta oleh iOS. Anda boleh mengaktifkan atau menyahaktifkan
+Subuh, Zohor, Asar, Maghrib dan Isyak secara berasingan.
+
+Jika kebenaran pernah ditolak, gunakan **Buka Tetapan** dalam aplikasi atau
+buka Tetapan iOS dan aktifkan pemberitahuan untuk My Prayer Times.
+
+**Mengapakah pemberitahuan waktu solat berhenti diterima?**
+
+Aplikasi menggunakan pemberitahuan setempat dan menjadualkan set berterusan
+sehingga 60 makluman akan datang. iOS mengehadkan bilangan permintaan yang
+boleh kekal belum dihantar, dan aplikasi tidak menggunakan pelayan
+pemberitahuan jauh atau tugas pembaharuan latar belakang yang dijamin.
+
+Buka semula aplikasi secara berkala untuk memperbaharui jadual. Buka juga
+selepas perjalanan, perubahan kaedah pengiraan atau bahasa, perubahan waktu
+yang diaktifkan, atau perubahan kebenaran pemberitahuan. Masa penyampaian tepat
+diuruskan oleh iOS.
+
+**Mengapakah bahasa atau lokasi pemberitahuan tidak betul?**
+
+Buka aplikasi selepas menukar bahasa atau selepas perjalanan. Aplikasi membina
+semula pemberitahuan waktu solat yang belum dihantar menggunakan bahasa,
+lokasi, zon waktu dan kaedah pengiraan semasa.
+
+**Bagaimanakah saya menyediakan widget Solat Seterusnya?**
+
+Tambah My Prayer Times daripada galeri widget iOS, kemudian buka aplikasi utama
+sekurang-kurangnya sekali supaya lokasi semasa dan kaedah pengiraan dapat
+disimpan untuk widget. Widget kecil dan sederhana pada Skrin Utama serta
+aksesori segi empat tepat, sebaris dan bulat pada Skrin Kunci disokong.
+
+**Mengapakah widget meminta saya membuka aplikasi?**
+
+Widget memerlukan petikan yang dicipta oleh aplikasi utama. Widget meminta anda
+membuka aplikasi jika petikan belum wujud atau lokasi tersimpan telah berusia
+tujuh hari. Buka aplikasi selepas perjalanan supaya widget menerima lokasi dan
+zon waktu baharu.
+
+Kemas kini widget dan masa muat semula garis masa diuruskan oleh iOS, jadi
+penyegaran mungkin tidak dipaparkan serta-merta.
 
 **Diyanet atau Grande Mosquee de Paris tidak sepadan tepat dengan jadual
 terbitan**

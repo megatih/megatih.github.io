@@ -20,9 +20,25 @@ can deny or revoke location access in iOS Settings, but location-based
 features will then be unavailable.
 
 When the app returns to the foreground, it may refresh a location that is more
-than five minutes old. The previous valid location result may remain in memory
-while that refresh completes. Location values are not written to persistent
-storage by the app.
+than five minutes old. The previous valid result may remain available while
+that refresh completes.
+
+## Widget data stored on the device
+
+To provide the Next Prayer widget, the app stores one current snapshot in an
+Apple App Group container shared only with its widget extension. The snapshot
+contains:
+
+- the latest latitude and longitude;
+- the place name and time-zone identifier;
+- the selected calculation-method identifier and whether selection is
+  automatic;
+- the selected language; and
+- the date and time when the snapshot was saved.
+
+The snapshot is used locally to calculate the next prayer. It is overwritten
+when relevant inputs change, is not a location history, and is treated as stale
+by the widget after seven days. It is not sent to the developer.
 
 ## Preferences stored on the device
 
@@ -32,10 +48,25 @@ The app stores the following choices in standard iOS preferences:
 - the identifier of the manually selected authority or convention, when
   applicable; and
 - an explicit English or Bahasa Melayu selection, if you choose one instead of
-  System Default.
+  System Default;
+- whether prayer notifications are enabled; and
+- which of Subuh, Zohor, Asar, Maghrib, and Isyak are enabled for
+  notifications.
 
-These preferences do not contain your coordinates and are not sent to the
-developer. You can change them at any time from the app's Settings screen.
+These preferences are not sent to the developer. Coordinates used by the
+widget are stored separately in the App Group snapshot described above. You
+can change preferences at any time from the app's Settings screen.
+
+## Notifications
+
+If you enable prayer notifications, the app asks iOS for alert and sound
+permission and creates local notification requests on the device. Notification
+content contains the prayer name and calculated time context. The app does not
+register for remote push notifications and does not send notification data to
+the developer.
+
+You can disable individual prayer alerts in the app or revoke notification
+permission in iOS Settings.
 
 ## Data collection
 
@@ -72,9 +103,24 @@ Anda boleh menolak atau membatalkan akses lokasi dalam Tetapan iOS, tetapi
 ciri berasaskan lokasi tidak akan tersedia.
 
 Apabila aplikasi kembali ke latar hadapan, aplikasi mungkin menyegarkan lokasi
-yang melebihi lima minit. Keputusan lokasi sah sebelumnya mungkin kekal dalam
-memori sementara penyegaran selesai. Nilai lokasi tidak ditulis ke storan
-kekal oleh aplikasi.
+yang melebihi lima minit. Keputusan sah sebelumnya mungkin kekal tersedia
+sementara penyegaran selesai.
+
+## Data widget yang disimpan pada peranti
+
+Untuk menyediakan widget Solat Seterusnya, aplikasi menyimpan satu petikan
+semasa dalam bekas App Group Apple yang hanya dikongsi dengan sambungan
+widgetnya. Petikan tersebut mengandungi:
+
+- latitud dan longitud terkini;
+- nama tempat dan pengecam zon waktu;
+- pengecam kaedah pengiraan pilihan dan sama ada pemilihan adalah automatik;
+- bahasa pilihan; dan
+- tarikh serta masa petikan disimpan.
+
+Petikan digunakan secara setempat untuk mengira waktu solat seterusnya. Petikan
+digantikan apabila input berkaitan berubah, bukan sejarah lokasi, dan dianggap
+lapuk oleh widget selepas tujuh hari. Petikan tidak dihantar kepada pembangun.
 
 ## Keutamaan yang disimpan pada peranti
 
@@ -84,11 +130,25 @@ Aplikasi menyimpan pilihan berikut dalam keutamaan iOS standard:
 - pengecam pihak berkuasa atau konvensyen yang dipilih secara manual, jika
   berkenaan; dan
 - pilihan Bahasa Inggeris atau Bahasa Melayu, jika anda memilihnya dan bukan
-  Lalai Sistem.
+  Lalai Sistem;
+- sama ada pemberitahuan waktu solat diaktifkan; dan
+- waktu Subuh, Zohor, Asar, Maghrib dan Isyak yang diaktifkan untuk
+  pemberitahuan.
 
-Keutamaan ini tidak mengandungi koordinat anda dan tidak dihantar kepada
-pembangun. Anda boleh mengubahnya pada bila-bila masa melalui skrin Tetapan
-aplikasi.
+Keutamaan ini tidak dihantar kepada pembangun. Koordinat yang digunakan oleh
+widget disimpan secara berasingan dalam petikan App Group yang diterangkan di
+atas. Anda boleh mengubah keutamaan pada bila-bila masa melalui skrin Tetapan.
+
+## Pemberitahuan
+
+Jika anda mengaktifkan pemberitahuan waktu solat, aplikasi meminta kebenaran
+makluman dan bunyi daripada iOS serta mencipta permintaan pemberitahuan setempat
+pada peranti. Kandungan pemberitahuan mengandungi nama waktu solat dan konteks
+waktu yang dikira. Aplikasi tidak mendaftar untuk pemberitahuan tolak jauh dan
+tidak menghantar data pemberitahuan kepada pembangun.
+
+Anda boleh menyahaktifkan makluman waktu tertentu dalam aplikasi atau
+membatalkan kebenaran pemberitahuan dalam Tetapan iOS.
 
 Aplikasi ini tidak mengandungi SDK iklan atau analitik, tidak menjejaki anda
 merentas aplikasi atau laman web, dan tidak menghantar jadual solat atau

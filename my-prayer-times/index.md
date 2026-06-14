@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Prayer Times
-subtitle: Prayer overview, location-aware calculation methods, and Qibla direction
+subtitle: Prayer notifications, widgets, location-aware calculations, and Qibla direction
 permalink: /my-prayer-times/
 ---
 
@@ -21,8 +21,37 @@ remains active across launches and location changes.
 - Persistent manual selection and transparent calculation parameters
 - Qibla direction with true-north and magnetic-north handling
 - System, English, and Bahasa Melayu language choices
+- Configurable local notifications for the five obligatory prayers
+- Next Prayer widgets for the Home Screen and Lock Screen
 - Resilient foreground location refresh without background location access
 - Designed for iOS 17 and later
+
+## Notifications
+
+Notifications are optional and are requested only after you turn them on in
+Settings. Subuh, Zohor, Asar, Maghrib, and Isyak can each be enabled or
+disabled independently.
+
+The app schedules up to 60 local notification requests using the current
+location, time zone, calculation method, and selected language. Delivery is
+managed by iOS and may not occur at the exact calculated second. Reopen the
+app periodically to renew the rolling schedule, and reopen it after travelling
+or changing a calculation setting.
+
+No remote notification service or developer-operated notification server is
+used.
+
+## Next Prayer widgets
+
+The Next Prayer widget is available in small and medium Home Screen sizes and
+in rectangular, inline, and circular Lock Screen accessory families. It shows
+the next prayer and a live remaining-time countdown.
+
+Open the main app once to provide the widget with a current location and
+calculation setting. The app stores one widget snapshot in its private App
+Group. The widget stops using a snapshot after seven days and asks you to open
+the app to refresh it. After travelling, open the app so the widget can use
+the new location and time zone.
 
 ## Foreground location behavior
 
@@ -74,8 +103,38 @@ atau lokasi berubah.
 - Pilihan manual yang kekal serta parameter pengiraan yang telus
 - Arah kiblat dengan pengendalian utara benar dan utara magnet
 - Pilihan bahasa Sistem, Bahasa Inggeris dan Bahasa Melayu
+- Pemberitahuan setempat yang boleh dikonfigurasi bagi lima waktu solat fardu
+- Widget Solat Seterusnya untuk Skrin Utama dan Skrin Kunci
 - Penyegaran lokasi latar hadapan yang kukuh tanpa akses lokasi latar belakang
 - Direka untuk iOS 17 dan lebih baharu
+
+## Pemberitahuan
+
+Pemberitahuan adalah pilihan dan kebenaran hanya diminta selepas anda
+mengaktifkannya dalam Tetapan. Subuh, Zohor, Asar, Maghrib dan Isyak boleh
+diaktifkan atau dinyahaktifkan secara berasingan.
+
+Aplikasi menjadualkan sehingga 60 permintaan pemberitahuan setempat menggunakan
+lokasi, zon waktu, kaedah pengiraan dan bahasa pilihan semasa. Penyampaian
+diuruskan oleh iOS dan mungkin tidak berlaku tepat pada saat yang dikira. Buka
+semula aplikasi secara berkala untuk memperbaharui jadual berterusan, dan buka
+semula selepas perjalanan atau perubahan tetapan pengiraan.
+
+Tiada perkhidmatan pemberitahuan jauh atau pelayan pemberitahuan yang
+dikendalikan oleh pembangun digunakan.
+
+## Widget Solat Seterusnya
+
+Widget Solat Seterusnya tersedia dalam saiz kecil dan sederhana pada Skrin
+Utama serta keluarga aksesori segi empat tepat, sebaris dan bulat pada Skrin
+Kunci. Widget memaparkan waktu solat seterusnya dan kira detik baki masa secara
+langsung.
+
+Buka aplikasi utama sekali untuk memberikan lokasi semasa dan tetapan
+pengiraan kepada widget. Aplikasi menyimpan satu petikan widget dalam App Group
+peribadinya. Widget berhenti menggunakan petikan selepas tujuh hari dan meminta
+anda membuka aplikasi untuk menyegarkannya. Selepas perjalanan, buka aplikasi
+supaya widget menggunakan lokasi dan zon waktu baharu.
 
 ## Pengendalian lokasi latar hadapan
 

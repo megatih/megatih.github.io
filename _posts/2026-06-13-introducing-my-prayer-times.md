@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Introducing My Prayer Times
-subtitle: Location-aware prayer calculation methods, tahrim guidance, and Qibla direction
+subtitle: Prayer times, notifications, widgets, tahrim guidance, and Qibla direction
 cover-img: /assets/img/my-prayer-times/app-icon.png
 thumbnail-img: /assets/img/my-prayer-times/app-icon.png
 share-img: /assets/img/my-prayer-times/app-icon.png
-tags: [swift, ios, swiftui, projects, prayer-times, qibla]
-description: "Introducing My Prayer Times, a privacy-focused iPhone and iPad app with a prayer overview dashboard, location-aware calculation methods, tahrim guidance, and live Qibla direction."
+tags: [swift, ios, swiftui, widgetkit, notifications, projects, prayer-times, qibla]
+description: "Introducing My Prayer Times, a privacy-focused iPhone and iPad app with prayer notifications, Home Screen and Lock Screen widgets, location-aware calculations, tahrim guidance, and live Qibla direction."
 comments: true
 ---
 
@@ -22,9 +22,9 @@ limitations visible.
 
 ![My Prayer Times app icon](/assets/img/my-prayer-times/app-icon.png){: .mx-auto.d-block style="max-width: 420px;" }
 
-> **Updated June 14, 2026:** The app now includes a prayer overview dashboard,
-> in-app language selection, more efficient calculations, and resilient
-> location refresh when returning from another app.
+> **Updated June 14, 2026:** The app now includes configurable local prayer
+> notifications, Home Screen and Lock Screen widgets, a prayer overview
+> dashboard, in-app language selection, and resilient foreground refresh.
 
 ### What My Prayer Times Provides
 
@@ -50,6 +50,13 @@ limitations visible.
 * **English and Bahasa Melayu:** The interface and explanatory content are
   available in both languages. You can follow the system language or select a
   language in the app.
+* **Configurable prayer notifications:** You can enable local notifications
+  for Subuh, Zohor, Asar, Maghrib, and Isyak individually. The app schedules
+  up to 60 upcoming alerts on the device and refreshes the rolling schedule
+  when the app is opened or its calculation inputs change.
+* **Next Prayer widgets:** Home Screen and Lock Screen widgets show the next
+  prayer with a live countdown. They use the last location, time zone,
+  calculation method, and language saved by the main app.
 * **Reliable foreground refresh:** Returning from the Home Screen or another
   app keeps the last valid prayer schedule and Qibla direction visible. The
   app refreshes a location only when the previous fix is more than five
@@ -93,10 +100,17 @@ Location is used to calculate prayer times and Qibla direction. The app does
 not retain a location history or send prayer schedules and compass readings to
 developer-operated servers.
 
-The app stores only the selected automatic or manual calculation setting and
-the selected authority identifier, plus an optional in-app language choice, in
-iOS preferences. It does not store a location history or request background
-location access.
+The app stores calculation, language, and notification preferences on the
+device. To support the widget, it also stores one current snapshot containing
+the latest coordinates, place name, time zone, selected method, language, and
+save time in an Apple App Group shared only by the app and its widget
+extension. This snapshot is overwritten when inputs change, is treated as
+stale after seven days, and is never uploaded to the developer.
+
+Notifications are local notifications managed by iOS. The app does not use a
+remote notification server, request background location access, or perform
+cross-app tracking. Because iOS limits pending requests, reopening the app
+periodically renews the rolling notification schedule.
 
 You can read more about the app, its privacy practices, and troubleshooting
 guidance at the links below.
@@ -121,10 +135,10 @@ menerangkan andaian dan batas pengiraannya? My Prayer Times menjawab persoalan
 tersebut melalui pengalaman SwiftUI pada peranti yang menggunakan kriteria
 konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
 
-> **Dikemas kini pada 14 Jun 2026:** Aplikasi kini mempunyai papan pemuka
-> ringkasan solat, pemilihan bahasa dalam aplikasi, pengiraan yang lebih cekap
-> dan penyegaran lokasi yang lebih kukuh apabila kembali daripada aplikasi
-> lain.
+> **Dikemas kini pada 14 Jun 2026:** Aplikasi kini mempunyai pemberitahuan
+> waktu solat yang boleh dikonfigurasi, widget Skrin Utama dan Skrin Kunci,
+> papan pemuka ringkasan solat, pemilihan bahasa dalam aplikasi dan penyegaran
+> latar hadapan yang lebih kukuh.
 
 ### Ciri Utama
 
@@ -151,6 +165,14 @@ konvensyen pengiraan yang dipilih serta batasnya dengan jelas.
 * **Bahasa Inggeris dan Bahasa Melayu:** Antara muka dan kandungan penerangan
   tersedia dalam kedua-dua bahasa. Anda boleh mengikut bahasa sistem atau
   memilih bahasa dalam aplikasi.
+* **Pemberitahuan waktu solat:** Anda boleh mengaktifkan pemberitahuan setempat
+  bagi Subuh, Zohor, Asar, Maghrib dan Isyak secara berasingan. Aplikasi
+  menjadualkan sehingga 60 makluman akan datang pada peranti dan memperbaharui
+  jadual berterusan apabila aplikasi dibuka atau input pengiraan berubah.
+* **Widget Solat Seterusnya:** Widget Skrin Utama dan Skrin Kunci memaparkan
+  waktu solat seterusnya dengan kira detik langsung. Widget menggunakan
+  lokasi, zon waktu, kaedah pengiraan dan bahasa terakhir yang disimpan oleh
+  aplikasi utama.
 * **Penyegaran latar hadapan yang kukuh:** Apabila kembali daripada Skrin Utama
   atau aplikasi lain, jadual solat dan arah kiblat sah yang terakhir kekal
   dipaparkan. Aplikasi hanya menyegarkan lokasi apabila penentuan sebelumnya
@@ -194,10 +216,18 @@ Lokasi digunakan untuk mengira waktu solat dan arah kiblat. Aplikasi tidak
 menyimpan sejarah lokasi atau menghantar jadual solat dan bacaan kompas kepada
 pelayan yang dikendalikan oleh pembangun.
 
-Aplikasi hanya menyimpan tetapan pengiraan automatik atau manual dan pengecam
-pihak berkuasa yang dipilih, serta pilihan bahasa dalam aplikasi jika
-ditetapkan, dalam keutamaan iOS. Aplikasi tidak menyimpan sejarah lokasi atau
-meminta akses lokasi di latar belakang.
+Aplikasi menyimpan pilihan pengiraan, bahasa dan pemberitahuan pada peranti.
+Untuk menyokong widget, aplikasi turut menyimpan satu petikan semasa yang
+mengandungi koordinat terkini, nama tempat, zon waktu, kaedah pilihan, bahasa
+dan masa simpanan dalam App Group Apple yang hanya dikongsi oleh aplikasi dan
+sambungan widgetnya. Petikan ini digantikan apabila input berubah, dianggap
+lapuk selepas tujuh hari dan tidak pernah dimuat naik kepada pembangun.
+
+Pemberitahuan ialah pemberitahuan setempat yang diuruskan oleh iOS. Aplikasi
+tidak menggunakan pelayan pemberitahuan jauh, tidak meminta akses lokasi latar
+belakang dan tidak melakukan penjejakan merentas aplikasi. Oleh sebab iOS
+mengehadkan permintaan yang belum dihantar, buka semula aplikasi secara
+berkala untuk memperbaharui jadual pemberitahuan berterusan.
 
 Maklumat lanjut tentang aplikasi, amalan privasi dan panduan penyelesaian
 masalah tersedia melalui pautan di bawah.
