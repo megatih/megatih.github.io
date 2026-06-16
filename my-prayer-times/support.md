@@ -1,17 +1,23 @@
 ---
 layout: page
 title: My Prayer Times Support
-subtitle: Help and contact information
+subtitle: Help, troubleshooting, and feedback
 permalink: /my-prayer-times/support/
 ---
 
-## Common issues
+Thank you for using My Prayer Times. The app is provided free as amal jariah
+for Muslim users, and thoughtful suggestions are welcome.
+
+## Common Issues
 
 **Prayer times or Qibla direction are unavailable**
 
 Enable Location Services for My Prayer Times in iOS Settings. Precise Location
-provides better results, especially for Qibla direction and locations near a
+provides better results, especially for Qibla direction and places near a
 time-zone boundary.
+
+The app only needs location access while you use it. It does not require
+Always or background location access.
 
 **Location appears stuck after returning to the app**
 
@@ -23,24 +29,24 @@ temporary failures automatically.
 If no valid result has ever been obtained, confirm that Location Services and
 While Using the App permission are enabled, then tap **Try Again**. You can
 also close and reopen the app after changing its permission in iOS Settings.
-The app does not require Always or background location access.
 
 **The compass appears inaccurate**
 
 Hold the device flat, move away from metal or magnets, and move the device in
 a figure-eight pattern. Compass accuracy depends on the device and its
-surroundings.
+surroundings. The Qibla bearing can still be shown from the detected location
+even when live compass heading is unavailable.
 
 **The app differs from an official timetable**
 
 Confirm the authority or convention displayed under Prayer Times. Open the
-gear button to choose another method or restore Automatic by Location.
+gear button to choose another method or restore **Automatic by Location**.
 
-The app calculates coordinate-based estimates. Named presets do not always
-reproduce every locality adjustment, safety margin, seasonal rule, or rounding
-policy used in an official timetable. Always follow the applicable official
-zone, locality, mosque, or religious-authority timetable when a difference
-matters.
+My Prayer Times calculates coordinate-based estimates. Named presets do not
+always reproduce every locality adjustment, safety margin, seasonal rule, or
+rounding policy used in an official timetable. Please follow the applicable
+official zone, locality, mosque, scholar, or religious-authority timetable
+when a difference matters.
 
 **The selected calculation method changed**
 
@@ -52,7 +58,7 @@ unchanged when your location changes.
 **How do I return to automatic selection?**
 
 Open the gear button, then select **Automatic by Location**. The app will use
-the detected country again and recalculate the schedule immediately.
+the detected country again and recalculate the schedule.
 
 **How do I change the app language?**
 
@@ -97,15 +103,16 @@ and circular Lock Screen accessories are supported.
 
 Touch and hold an empty area of the Home Screen, tap **Edit**, then **Add
 Widget**. Select My Prayer Times and swipe through its previews until the large
-schedule appears, then tap **Add Widget**. iOS does not resize every existing
-widget in place, so remove the current widget and add the large version when a
-size option is not offered by **Edit Widget**.
+schedule appears, then tap **Add Widget**.
+
+iOS does not resize every existing widget in place. Remove the current widget
+and add the large version when a size option is not offered by **Edit
+Widget**.
 
 If the large preview is missing after updating the app, open My Prayer Times
 once, restart the iPhone, and check the widget gallery again. If necessary,
 remove the old widget and reinstall the app so iOS refreshes its cached
-WidgetKit configuration. The current release declares small, medium, and large
-Home Screen support.
+WidgetKit configuration.
 
 **Why does the widget ask me to open the app?**
 
@@ -142,18 +149,28 @@ different high-latitude rule.
 
 ## Contact
 
-For support, email
+For support or suggestions, email
 [megatiskandar@gmail.com](mailto:megatiskandar@gmail.com). Include your device
-model, iOS version, approximate location, and a description of the issue. Do
-not send precise coordinates unless they are necessary.
+model, iOS version, approximate location, selected calculation method, and a
+description of the issue. Please do not send precise coordinates unless they
+are necessary.
 
 ## Bahasa Melayu
+
+Terima kasih kerana menggunakan My Prayer Times. Aplikasi ini disediakan
+secara percuma sebagai amal jariah untuk pengguna Muslim, dan cadangan yang
+baik sangat dialu-alukan.
+
+## Isu Lazim
 
 **Waktu solat atau arah kiblat tidak tersedia**
 
 Aktifkan Perkhidmatan Lokasi untuk My Prayer Times dalam Tetapan iOS. Lokasi
 Tepat memberikan keputusan yang lebih baik, khususnya untuk arah kiblat dan
-lokasi berhampiran sempadan zon waktu.
+tempat berhampiran sempadan zon waktu.
+
+Aplikasi hanya memerlukan akses lokasi semasa digunakan. Aplikasi tidak
+memerlukan akses lokasi Sentiasa atau latar belakang.
 
 **Lokasi kelihatan tersekat selepas kembali ke aplikasi**
 
@@ -165,26 +182,26 @@ dicuba semula secara automatik.
 Jika tiada keputusan sah pernah diperoleh, pastikan Perkhidmatan Lokasi dan
 kebenaran Semasa Menggunakan Aplikasi diaktifkan, kemudian tekan **Cuba
 Lagi**. Anda juga boleh menutup dan membuka semula aplikasi selepas mengubah
-kebenaran dalam Tetapan iOS. Aplikasi tidak memerlukan akses lokasi Sentiasa
-atau latar belakang.
+kebenaran dalam Tetapan iOS.
 
 **Kompas kelihatan tidak tepat**
 
 Pegang peranti secara mendatar, jauhkan daripada logam atau magnet, dan
-gerakkan peranti membentuk angka lapan. Ketepatan bergantung pada peranti dan
-persekitaran.
+gerakkan peranti membentuk angka lapan. Ketepatan kompas bergantung pada
+peranti dan persekitaran. Bearing kiblat masih boleh dipaparkan berdasarkan
+lokasi yang dikesan walaupun arah kompas langsung tidak tersedia.
 
 **Waktu berbeza daripada jadual rasmi**
 
 Semak pihak berkuasa atau konvensyen yang dipaparkan di bawah Waktu Solat.
-Buka butang gear untuk memilih kaedah lain atau memulihkan Automatik mengikut
-Lokasi.
+Buka butang gear untuk memilih kaedah lain atau memulihkan **Automatik
+mengikut Lokasi**.
 
-Aplikasi mengira anggaran berasaskan koordinat. Pratetap yang dinamakan tidak
-semestinya menghasilkan semula semua pelarasan kawasan, margin ihtiyat,
-peraturan bermusim atau dasar pembundaran dalam jadual rasmi. Ikuti jadual
-rasmi zon, kawasan, masjid atau pihak berkuasa agama apabila perbezaan tersebut
-penting.
+My Prayer Times mengira anggaran berasaskan koordinat. Pratetap yang dinamakan
+tidak semestinya menghasilkan semula semua pelarasan kawasan, margin ihtiyat,
+peraturan bermusim atau dasar pembundaran dalam jadual rasmi. Sila ikuti
+jadual rasmi zon, kawasan, masjid, ulama atau pihak berkuasa agama apabila
+perbezaan tersebut penting.
 
 **Kaedah pengiraan yang dipilih berubah**
 
@@ -197,7 +214,7 @@ berubah.
 **Bagaimanakah saya kembali kepada pemilihan automatik?**
 
 Buka butang gear, kemudian pilih **Automatik mengikut Lokasi**. Aplikasi akan
-menggunakan negara yang dikesan semula dan mengira jadual dengan serta-merta.
+menggunakan negara yang dikesan semula dan mengira jadual.
 
 **Bagaimanakah saya menukar bahasa aplikasi?**
 
@@ -222,8 +239,8 @@ pemberitahuan jauh atau tugas pembaharuan latar belakang yang dijamin.
 
 Buka semula aplikasi secara berkala untuk memperbaharui jadual. Buka juga
 selepas perjalanan, perubahan kaedah pengiraan atau bahasa, perubahan waktu
-yang diaktifkan, atau perubahan kebenaran pemberitahuan. Masa penyampaian tepat
-diuruskan oleh iOS.
+yang diaktifkan, atau perubahan kebenaran pemberitahuan. Masa penyampaian
+tepat diuruskan oleh iOS.
 
 **Mengapakah bahasa atau lokasi pemberitahuan tidak betul?**
 
@@ -233,38 +250,38 @@ lokasi, zon waktu dan kaedah pengiraan semasa.
 
 **Bagaimanakah saya menyediakan widget Solat Seterusnya?**
 
-Tambah My Prayer Times daripada galeri widget iOS, kemudian buka aplikasi utama
-sekurang-kurangnya sekali supaya lokasi semasa dan kaedah pengiraan dapat
-disimpan untuk widget. Widget kecil dan sederhana pada Skrin Utama serta
-widget besar, serta aksesori segi empat tepat, sebaris dan bulat pada Skrin
-Kunci disokong.
+Tambah My Prayer Times daripada galeri widget iOS, kemudian buka aplikasi
+utama sekurang-kurangnya sekali supaya lokasi semasa dan kaedah pengiraan
+dapat disimpan untuk widget. Widget kecil, sederhana dan besar pada Skrin
+Utama serta aksesori segi empat tepat, sebaris dan bulat pada Skrin Kunci
+disokong.
 
 **Bagaimanakah saya menambah atau menukar kepada widget besar?**
 
 Tekan lama ruang kosong pada Skrin Utama, tekan **Edit**, kemudian **Add
 Widget**. Pilih My Prayer Times dan leret pratonton sehingga jadual besar
-dipaparkan, kemudian tekan **Add Widget**. iOS tidak membenarkan semua widget
-sedia ada ditukar saiz secara terus. Buang widget semasa dan tambah versi besar
-jika pilihan saiz tidak tersedia melalui **Edit Widget**.
+dipaparkan, kemudian tekan **Add Widget**.
+
+iOS tidak membenarkan semua widget sedia ada ditukar saiz secara terus. Buang
+widget semasa dan tambah versi besar jika pilihan saiz tidak tersedia melalui
+**Edit Widget**.
 
 Jika pratonton besar tiada selepas aplikasi dikemas kini, buka My Prayer Times
 sekali, mulakan semula iPhone dan semak galeri widget sekali lagi. Jika perlu,
-buang widget lama dan pasang semula aplikasi supaya iOS menyegarkan konfigurasi
-WidgetKit yang dicache. Keluaran semasa mengisytiharkan sokongan Skrin Utama
-kecil, sederhana dan besar.
+buang widget lama dan pasang semula aplikasi supaya iOS menyegarkan
+konfigurasi WidgetKit yang dicache.
 
 **Mengapakah widget meminta saya membuka aplikasi?**
 
-Widget memerlukan petikan yang dicipta oleh aplikasi utama. Widget meminta anda
-membuka aplikasi jika petikan belum wujud atau lokasi tersimpan telah berusia
-tujuh hari. Buka aplikasi selepas perjalanan supaya widget menerima lokasi dan
-zon waktu baharu.
+Widget memerlukan petikan yang dicipta oleh aplikasi utama. Widget meminta
+anda membuka aplikasi jika petikan belum wujud atau lokasi tersimpan telah
+berusia tujuh hari. Buka aplikasi selepas perjalanan supaya widget menerima
+lokasi dan zon waktu baharu.
 
 Kemas kini widget dan masa muat semula garis masa diuruskan oleh iOS, jadi
 penyegaran mungkin tidak dipaparkan serta-merta.
 
-**Diyanet atau Grande Mosquee de Paris tidak sepadan tepat dengan jadual
-terbitan**
+**Diyanet atau Grande Mosquee de Paris tidak sepadan tepat dengan jadual terbitan**
 
 Kaedah ini dilabel sebagai anggaran keserasian. Jadual terbitannya merangkumi
 dasar institusi, kawasan atau bermusim yang tidak dapat dihasilkan sepenuhnya
@@ -279,8 +296,8 @@ sumber kalendar Hijri yang berautoriti.
 **Selang tahrim tidak dipaparkan untuk Tehran atau Leva Qum**
 
 Kedua-duanya ialah pratetap pengiraan Jaafari dan tidak mentakrifkan selang
-larangan solat Sunni umum aplikasi. Ikuti hukum marja anda atau pihak berkuasa
-agama lain yang berkelayakan.
+larangan solat Sunni umum aplikasi. Ikuti hukum marja anda atau pihak
+berkuasa agama lain yang berkelayakan.
 
 **Waktu tidak dapat dikira pada latitud tinggi**
 
@@ -288,6 +305,9 @@ Pada sesetengah tarikh dan lokasi, Matahari tidak mencapai sudut yang
 diperlukan oleh kaedah pengiraan. Aplikasi melaporkan keadaan ini dan tidak
 menggantikan kaedah latitud tinggi yang lain secara senyap.
 
-Untuk sokongan, e-mel
+## Hubungi
+
+Untuk sokongan atau cadangan, e-mel
 [megatiskandar@gmail.com](mailto:megatiskandar@gmail.com) dengan model peranti,
-versi iOS, lokasi anggaran dan penerangan masalah.
+versi iOS, lokasi anggaran, kaedah pengiraan pilihan dan penerangan masalah.
+Sila jangan hantar koordinat tepat kecuali jika diperlukan.

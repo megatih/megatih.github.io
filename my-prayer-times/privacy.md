@@ -5,8 +5,9 @@ subtitle: Effective June 15, 2026
 permalink: /my-prayer-times/privacy/
 ---
 
-My Prayer Times does not collect, store, sell, or share personal data for
-advertising, analytics, or tracking. The app does not require an account.
+My Prayer Times is built to be simple and private. The app does not collect,
+store, sell, or share personal data for advertising, analytics, or tracking.
+It does not require an account.
 
 ## Location
 
@@ -15,15 +16,15 @@ Your coordinates are used on the device to calculate local prayer times and
 Qibla direction. The app does not request background location access.
 
 Apple's geocoding service may receive coordinates to provide a place name,
-country code, and time zone. The app does not retain a location history. You
-can deny or revoke location access in iOS Settings, but location-based
-features will then be unavailable.
+country code, and time zone. My Prayer Times does not retain a location
+history. You can deny or revoke location access in iOS Settings, but
+location-based prayer times and Qibla direction will then be unavailable.
 
 When the app returns to the foreground, it may refresh a location that is more
-than five minutes old. The previous valid result may remain available while
-that refresh completes.
+than five minutes old. The previous valid result may remain visible while that
+refresh completes.
 
-## Widget data stored on the device
+## Widget Data Stored on the Device
 
 To provide the Next Prayer widget, the app stores one current snapshot in an
 Apple App Group container shared only with its widget extension. The snapshot
@@ -31,8 +32,7 @@ contains:
 
 - the latest latitude and longitude;
 - the place name and time-zone identifier;
-- the selected calculation-method identifier and whether selection is
-  automatic;
+- the selected calculation-method identifier and whether selection is automatic;
 - the selected language; and
 - the date and time when the snapshot was saved.
 
@@ -43,18 +43,15 @@ overwritten when relevant inputs change, is not a location history, and is
 treated as stale by the widget after seven days. It is not sent to the
 developer.
 
-## Preferences stored on the device
+## Preferences Stored on the Device
 
-The app stores the following choices in standard iOS preferences:
+The app stores these choices in standard iOS preferences:
 
-- whether calculation-method selection is automatic or manual; and
-- the identifier of the manually selected authority or convention, when
-  applicable; and
-- an explicit English or Bahasa Melayu selection, if you choose one instead of
-  System Default;
+- whether calculation-method selection is automatic or manual;
+- the identifier of the manually selected authority or convention, when applicable;
+- an explicit English or Bahasa Melayu selection, if you choose one instead of System Default;
 - whether prayer notifications are enabled; and
-- which of Subuh, Zohor, Asar, Maghrib, and Isyak are enabled for
-  notifications.
+- which of Subuh, Zohor, Asar, Maghrib, and Isyak are enabled for notifications.
 
 These preferences are not sent to the developer. Coordinates used by the
 widget are stored separately in the App Group snapshot described above. You
@@ -71,7 +68,7 @@ the developer.
 You can disable individual prayer alerts in the app or revoke notification
 permission in iOS Settings.
 
-## Data collection
+## Data Collection
 
 The app:
 
@@ -81,9 +78,9 @@ The app:
 - does not upload prayer schedules or compass readings to the developer; and
 - does not store personal information on developer-operated servers.
 
-The app includes links to calculation references and external authority,
-support, and policy websites. Those sites apply their own privacy policies
-when opened.
+The app includes links to calculation references, religious-authority sites,
+support pages, and policy pages. Those external sites apply their own privacy
+policies when opened.
 
 ## Contact
 
@@ -92,24 +89,26 @@ Questions about this policy can be sent to
 
 ## Bahasa Melayu
 
-My Prayer Times tidak mengumpul, menyimpan, menjual atau berkongsi data
-peribadi untuk pengiklanan, analitik atau penjejakan. Aplikasi ini tidak
-memerlukan akaun.
+My Prayer Times dibina supaya mudah digunakan dan menjaga privasi. Aplikasi ini
+tidak mengumpul, menyimpan, menjual atau berkongsi data peribadi untuk
+pengiklanan, analitik atau penjejakan. Aplikasi ini tidak memerlukan akaun.
+
+## Lokasi
 
 Dengan kebenaran anda, aplikasi hanya mengakses lokasi semasa anda
 menggunakannya. Koordinat digunakan pada peranti untuk mengira waktu solat
 setempat dan arah kiblat. Aplikasi tidak meminta akses lokasi latar belakang.
 
 Perkhidmatan geokod Apple mungkin menerima koordinat untuk memberikan nama
-tempat, kod negara dan zon waktu. Aplikasi tidak menyimpan sejarah lokasi.
-Anda boleh menolak atau membatalkan akses lokasi dalam Tetapan iOS, tetapi
-ciri berasaskan lokasi tidak akan tersedia.
+tempat, kod negara dan zon waktu. My Prayer Times tidak menyimpan sejarah
+lokasi. Anda boleh menolak atau membatalkan akses lokasi dalam Tetapan iOS,
+tetapi waktu solat dan arah kiblat berdasarkan lokasi tidak akan tersedia.
 
 Apabila aplikasi kembali ke latar hadapan, aplikasi mungkin menyegarkan lokasi
-yang melebihi lima minit. Keputusan sah sebelumnya mungkin kekal tersedia
+yang melebihi lima minit. Keputusan sah sebelumnya mungkin kekal dipaparkan
 sementara penyegaran selesai.
 
-## Data widget yang disimpan pada peranti
+## Data Widget Yang Disimpan Pada Peranti
 
 Untuk menyediakan widget Solat Seterusnya, aplikasi menyimpan satu petikan
 semasa dalam bekas App Group Apple yang hanya dikongsi dengan sambungan
@@ -125,21 +124,18 @@ Petikan digunakan secara setempat untuk mengira jadual solat, panduan tahrim
 semasa dan garis masa solat seterusnya yang dipaparkan oleh saiz widget yang
 disokong. Keputusan terbitan ini tidak menambah data peribadi tersimpan yang
 baharu. Petikan digantikan apabila input berkaitan berubah, bukan sejarah
-lokasi, dan dianggap lapuk selepas tujuh hari. Petikan tidak dihantar kepada
+lokasi dan dianggap lapuk selepas tujuh hari. Petikan tidak dihantar kepada
 pembangun.
 
-## Keutamaan yang disimpan pada peranti
+## Keutamaan Yang Disimpan Pada Peranti
 
 Aplikasi menyimpan pilihan berikut dalam keutamaan iOS standard:
 
-- sama ada pemilihan kaedah pengiraan adalah automatik atau manual; dan
-- pengecam pihak berkuasa atau konvensyen yang dipilih secara manual, jika
-  berkenaan; dan
-- pilihan Bahasa Inggeris atau Bahasa Melayu, jika anda memilihnya dan bukan
-  Lalai Sistem;
+- sama ada pemilihan kaedah pengiraan adalah automatik atau manual;
+- pengecam pihak berkuasa atau konvensyen yang dipilih secara manual, jika berkenaan;
+- pilihan English atau Bahasa Melayu, jika anda memilihnya dan bukan Lalai Sistem;
 - sama ada pemberitahuan waktu solat diaktifkan; dan
-- waktu Subuh, Zohor, Asar, Maghrib dan Isyak yang diaktifkan untuk
-  pemberitahuan.
+- waktu Subuh, Zohor, Asar, Maghrib dan Isyak yang diaktifkan untuk pemberitahuan.
 
 Keutamaan ini tidak dihantar kepada pembangun. Koordinat yang digunakan oleh
 widget disimpan secara berasingan dalam petikan App Group yang diterangkan di
@@ -148,18 +144,29 @@ atas. Anda boleh mengubah keutamaan pada bila-bila masa melalui skrin Tetapan.
 ## Pemberitahuan
 
 Jika anda mengaktifkan pemberitahuan waktu solat, aplikasi meminta kebenaran
-makluman dan bunyi daripada iOS serta mencipta permintaan pemberitahuan setempat
-pada peranti. Kandungan pemberitahuan mengandungi nama waktu solat dan konteks
-waktu yang dikira. Aplikasi tidak mendaftar untuk pemberitahuan tolak jauh dan
-tidak menghantar data pemberitahuan kepada pembangun.
+makluman dan bunyi daripada iOS serta mencipta permintaan pemberitahuan
+setempat pada peranti. Kandungan pemberitahuan mengandungi nama waktu solat
+dan konteks waktu yang dikira. Aplikasi tidak mendaftar untuk pemberitahuan
+tolak jauh dan tidak menghantar data pemberitahuan kepada pembangun.
 
 Anda boleh menyahaktifkan makluman waktu tertentu dalam aplikasi atau
 membatalkan kebenaran pemberitahuan dalam Tetapan iOS.
 
-Aplikasi ini tidak mengandungi SDK iklan atau analitik, tidak menjejaki anda
-merentas aplikasi atau laman web, dan tidak menghantar jadual solat atau
-bacaan kompas kepada pembangun. Pautan luaran tertakluk pada dasar privasi
-laman web berkenaan.
+## Pengumpulan Data
 
-Pertanyaan boleh dihantar kepada
+Aplikasi ini:
+
+- tidak mengandungi SDK iklan atau analitik;
+- tidak menjejaki anda merentas aplikasi atau laman web;
+- tidak mencipta akaun pengguna;
+- tidak memuat naik jadual solat atau bacaan kompas kepada pembangun; dan
+- tidak menyimpan maklumat peribadi pada pelayan yang dikendalikan oleh pembangun.
+
+Aplikasi mengandungi pautan kepada rujukan pengiraan, laman pihak berkuasa
+agama, halaman sokongan dan halaman dasar. Laman luaran tersebut tertakluk
+kepada dasar privasi masing-masing apabila dibuka.
+
+## Hubungi
+
+Pertanyaan tentang dasar ini boleh dihantar kepada
 [megatiskandar@gmail.com](mailto:megatiskandar@gmail.com).
