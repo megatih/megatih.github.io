@@ -104,15 +104,15 @@ To find out whether this really works, I needed tests. The first one is a classi
 I made it harder (call it the *Cornell Box Deluxe*) by adding a tall box with a marble ball, a hand-made gold vase on a wooden box, and a chrome ball and a glass ball on a checkerboard rug.
 
 <figure class="c3d-fig">
-  <img src="/assets/img/c3d-mcp/cornell-final.jpg" alt="Final render of the Cornell Box Deluxe: a white room with a red left wall and green right wall, a marble ball on a tall white box, a gold vase on a wooden box, and chrome and glass balls on a checkerboard rug.">
-  <figcaption>The final Cornell Box Deluxe, built and rendered through c3d-mcp. Look for the red and green light bouncing onto the white surfaces, the checkerboard reflected in the chrome ball and seen upside down through the glass ball.</figcaption>
+  <img src="/assets/img/c3d-mcp/cornell-final-falcon.jpg" alt="Final render of the Cornell Box Deluxe made with Cheetah3D's Falcon renderer: a white room with a red left wall and green right wall, a marble ball on a tall white box, a gold vase on a wooden box, and chrome and glass balls on a checkerboard rug.">
+  <figcaption>The final Cornell Box Deluxe, built through c3d-mcp and rendered with Cheetah3D's <strong>Falcon</strong> renderer, with reflective and refractive caustics switched on. Look for the red and green light bouncing onto the white surfaces, the checkerboard reflected in the chrome ball and seen upside down through the glass ball, and the light refracting through the glass ball into its shadow.</figcaption>
 </figure>
 
 The AI worked in stages and looked at a rendered picture after every one, just as a person would:
 
 <figure class="c3d-fig">
   <img src="/assets/img/c3d-mcp/cornell-steps.jpg" alt="Four stage images: an empty room with a ceiling lamp; the room with boxes, balls and a vase in plain grey; the same scene with colours and textures; and the final look with realistic light bounce.">
-  <figcaption>How it came together: (1) the room, lamp and camera; (2) the objects, including a vase the AI modelled by writing a short script; (3) colours, wood, marble, chrome, glass and gold; (4) realistic light bounce switched on.</figcaption>
+  <figcaption>How it came together: (1) the room, lamp and camera; (2) the objects, including a vase the AI modelled by writing a short script; (3) colours, wood, marble, chrome, glass and gold; (4) realistic light bounce switched on. These four step pictures use Cheetah3D's classic renderer; the final image above uses the Falcon renderer.</figcaption>
 </figure>
 
 This test also taught me something. The first attempt tilted the boxes the wrong way, because Cheetah3D measures rotation in a way the AI had guessed wrongly. We found it, fixed it, and wrote the lesson into the skills so no AI will make the same mistake again.
