@@ -32,8 +32,10 @@ comments: true
   figure.c3d-fig { margin: 1.5rem 0; text-align: center; }
   figure.c3d-fig img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,.25); }
   figure.c3d-fig figcaption { font-size: .9rem; opacity: .8; margin-top: .6rem; line-height: 1.4; }
-  .c3d-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  @media (max-width: 640px) { .c3d-pair { grid-template-columns: 1fr; } }
+  .c3d-pair { display: flex; align-items: flex-start; gap: 1rem; }
+  .c3d-pair figure.c3d-fig { margin: 0; min-width: 0; }
+  .c3d-pair figure.c3d-fig img { display: block; width: 100%; height: auto; }
+  @media (max-width: 640px) { .c3d-pair { flex-direction: column; align-items: stretch; } .c3d-pair figure.c3d-fig { flex: none !important; } }
   .c3d-cmd { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9rem; word-break: break-all; }
   .c3d-btns { text-align: center; margin: 1.5rem 0; }
   .c3d-btns a { margin: .25rem; }
@@ -128,13 +130,13 @@ The second test is much bigger, and it is my favourite. I came across a video by
 Here is the original reference picture the AIs had to match, and the result the Blender MCP version produced in the video:
 
 <div class="c3d-pair">
-  <figure class="c3d-fig">
-    <img src="/assets/img/c3d-mcp/cyberpunk-reference.jpg" alt="The original reference picture: a detailed anime-style purple cyberpunk Japanese building with glowing orange windows, neon signs, pipes and plants.">
-    <figcaption>The original reference picture from Muska's challenge. Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
+  <figure class="c3d-fig" style="flex: 858 1 0">
+    <img src="/assets/img/c3d-mcp/cyberpunk-reference-crop.jpg" alt="The original reference picture: a detailed anime-style purple cyberpunk Japanese building with glowing orange windows, neon signs, pipes and plants.">
+    <figcaption>The original reference picture from Muska's challenge (cropped to the building). Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
   </figure>
-  <figure class="c3d-fig">
-    <img src="/assets/img/c3d-mcp/cyberpunk-blender-result.jpg" alt="The Blender MCP result shown in the video: the cyberpunk building recreated in Blender by Claude Opus 5.5.">
-    <figcaption>The Blender MCP result shown in the video (Claude Opus 5.5). Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
+  <figure class="c3d-fig" style="flex: 727 1 0">
+    <img src="/assets/img/c3d-mcp/cyberpunk-blender-crop.jpg" alt="The Blender MCP result shown in the video: the cyberpunk building recreated in Blender by Claude Opus 5.5.">
+    <figcaption>The Blender MCP result shown in the video (Claude Opus 5.5), cropped to the building. Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
   </figure>
 </div>
 
