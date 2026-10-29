@@ -21,6 +21,7 @@ author: megatih
 
 navbar-links:
   About Me: "aboutme"
+  c3d-mcp: "2026-10-29-cheetah3d-meets-ai-introducing-c3d-mcp/"
   Tags: "tags"
 
 ################
@@ -49,7 +50,6 @@ round-avatar: true
 social-network-links:
   github: megatih
   linkedin: megatih
-  email: "megatiskandar@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: megatih
   twitter: megatih
@@ -231,16 +231,16 @@ footer-hover-col: "#ff79c6"
 # (2) Install the giscus app in your repository (details at https://giscus.app),
 # (3) Fill in *all* the parameters below
 # See more details about giscus and each of the following parameters at https://giscus.app
-#giscus:
-#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
-#  category: Announcements # Category name of your GitHub Discussion posts
-#  category-id: # ID of your category, retrieve this info from https://giscus.app
-#  mapping: pathname
-#  reactions-enabled: 1
-#  emit-metadata: 0
-#  theme: light
+giscus:
+  hostname: giscus.app
+  repository: megatih/c3d-mcp
+  repository-id: R_kgDOVbqdIg
+  category: Announcements
+  category-id: DIC_kwDOVbqdIs4DJ7P2
+  mapping: pathname
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light
 
 ################
 # --- Misc --- #
