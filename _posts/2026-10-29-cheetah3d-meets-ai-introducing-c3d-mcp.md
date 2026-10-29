@@ -125,7 +125,20 @@ The second test is much bigger, and it is my favourite. I came across a video by
 <p><strong>Credit where it is due.</strong> The challenge, the reference picture and the original prompt come from Muska's video and its accompanying document. I adapted that prompt so it works with Cheetah3D and c3d-mcp (for example, by removing the Blender-only features), and ran it with Claude Opus 5.5. Please go and watch the <a href="https://www.youtube.com/watch?v=SQs27US4FeI">original video</a> and visit <a href="https://www.youtube.com/@Muska-2026">Muska's channel</a>.</p>
 </div>
 
-Here is the picture the AI had to match, next to what the Blender version produced in the video, and what Cheetah3D produced:
+Here is the original reference picture the AIs had to match, and the result the Blender MCP version produced in the video:
+
+<div class="c3d-pair">
+  <figure class="c3d-fig">
+    <img src="/assets/img/c3d-mcp/cyberpunk-reference.jpg" alt="The original reference picture: a detailed anime-style purple cyberpunk Japanese building with glowing orange windows, neon signs, pipes and plants.">
+    <figcaption>The original reference picture from Muska's challenge. Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
+  </figure>
+  <figure class="c3d-fig">
+    <img src="/assets/img/c3d-mcp/cyberpunk-blender-result.jpg" alt="The Blender MCP result shown in the video: the cyberpunk building recreated in Blender by Claude Opus 5.5.">
+    <figcaption>The Blender MCP result shown in the video (Claude Opus 5.5). Image credit: Muska (<a href="https://www.youtube.com/watch?v=SQs27US4FeI">video</a>).</figcaption>
+  </figure>
+</div>
+
+And here are all three together, with what Cheetah3D produced on the right:
 
 <figure class="c3d-fig">
   <img src="/assets/img/c3d-mcp/cyberpunk-comparison.jpg" alt="Three images side by side: the original reference picture of a purple cyberpunk building, the Blender MCP result from the video, and the Cheetah3D result made with c3d-mcp.">
