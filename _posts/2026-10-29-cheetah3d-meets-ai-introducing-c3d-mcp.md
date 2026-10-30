@@ -72,7 +72,7 @@ I knew Cheetah3D can run JavaScript macros, but I had never really explored that
     <tr><td>It looks at its own work</td><td>The AI renders a picture, studies it, and fixes its own mistakes. Optional finishing touches add glow, outlines and colour grading.</td><td>"Render it, tell me what looks wrong, then fix it."</td></tr>
     <tr><td>Animation and export</td><td>Keyframe animation, image sequences, and export to common formats such as FBX, DAE, STL and USDZ. It can also fetch free models from Poly Haven.</td><td>"Spin the model slowly and export it as FBX."</td></tr>
     <tr><td>Safe by design</td><td>Works in a fresh scratch document, never overwrites your files, takes automatic checkpoints you can roll back to, and asks before anything risky.</td><td>"Undo that, go back to the checkpoint before the roof."</td></tr>
-    <tr><td>Easy to install</td><td>One command sets everything up. Works with Claude, Codex and Antigravity (and others), and comes with "skills" that teach your AI how to get the best out of it.</td><td>See the five steps below.</td></tr>
+    <tr><td>Easy to install</td><td>One command sets everything up, and the same command later updates, repairs or removes it. Works with Claude, Codex and Antigravity (and others), and comes with "skills" that teach your AI how to get the best out of it.</td><td>See the five steps below.</td></tr>
   </tbody>
 </table>
 
@@ -95,6 +95,25 @@ I knew Cheetah3D can run JavaScript macros, but I had never really explored that
 <div class="c3d-card">
 <p><strong>Want to read the installer first?</strong> Good idea! Download it with <span class="c3d-cmd">curl -fsSL https://github.com/megatih/c3d-mcp/releases/latest/download/install.sh -o install.sh</span>, open it in any text editor, then run it with <span class="c3d-cmd">bash install.sh</span>. You can also add <span class="c3d-cmd">--dry-run</span> to see what it <em>would</em> do without changing anything.</p>
 <p><strong>If something goes wrong:</strong> the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/INSTALL.md">install guide</a> and the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/TROUBLESHOOTING.md">troubleshooting page</a> cover the common problems. macOS may also block the helper the very first time because it is not yet "notarized" by Apple; the install guide shows the one-line fix.</p>
+</div>
+
+## Update, repair or remove it later
+
+You do not need to remember anything special. **Run the same install line again** and the installer first looks at your Mac and tells you what it found: nothing yet (a fresh install), the current version, an older version, a half-finished install, or a copy that was set up by hand. Then it offers only the sensible choices:
+
+<table class="c3d-table">
+  <thead><tr><th>You want to</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Update</td><td>Run the install line again and pick <em>Update</em>. The helper program is replaced too, and if the new one does not start, the old one is put back automatically.</td></tr>
+    <tr><td>Repair</td><td>Pick <em>Repair</em>. It fixes only what is missing or broken and leaves everything else alone.</td></tr>
+    <tr><td>Start over</td><td>Pick <em>Reinstall</em>. It rewrites everything, but keeps your settings, backups and your own Cheetah3D scripts.</td></tr>
+    <tr><td>Just look</td><td><span class="c3d-cmd">c3d-mcp status</span> shows what is installed and what to run next. Add <span class="c3d-cmd">--dry-run</span> to any action to preview it.</td></tr>
+    <tr><td>Remove it</td><td>Pick <em>Uninstall</em> to remove the bridge and the helper, or <em>Uninstall everything</em> to also remove the skills, the AI app entries and the installer's own folder. It lists what will go and asks first. Your Cheetah3D scripts and backups are never touched.</td></tr>
+  </tbody>
+</table>
+
+<div class="c3d-card">
+<p><strong>One thing to expect after an update:</strong> the helper program is signed but not notarized by Apple, so macOS treats a new version as a new app and asks you to switch on <em>C3D Bridge Helper</em> in System Settings again. The installer tells you when that is needed and opens the right page.</p>
 </div>
 
 The installer also adds a set of **skills**: short guidebooks that teach your AI how to use Cheetah3D well. They are the reason the AI knows, for example, which way rotation works in Cheetah3D, or how to check a render before moving on.
