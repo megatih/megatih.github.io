@@ -203,6 +203,7 @@ I hope you find c3d-mcp useful, and that it makes Cheetah3D even more fun for yo
 
 - **Cheetah3D** is created by **Martin Wengenmayer**, an independent developer who has been building and refining it since the early 2000s. Thank you, Martin, for making such an amazing app: friendly, fast, and a joy to use. I sincerely hope Cheetah3D will continue to be supported, developed and improved well into the future. If you use and love it too, please support it by [buying a licence from the official Cheetah3D website](https://www.cheetah3d.com).
 - **Muska**, for the [video and challenge](https://www.youtube.com/watch?v=SQs27US4FeI) that inspired the Cyberpunk Diorama test, and for the reference image and prompt it was based on.
+- **Tonio Loewald**, whose [c3d-scripting-kb](https://github.com/tonioloewald/c3d-scripting-kb) (the Cheetah3D API reference, example scripts, linter rules and forum-derived gotchas, collected from the posts of the Cheetah3D forum community) and online book [Learn 3D with Cheetah 3D](https://learn3d.loewald.com) taught c3d-mcp a lot: it uses them for its documentation search, script linting and agent skills. Everything I took from them was tested against Cheetah3D 8.1.3 first, and where the app behaved differently, the correction is mine, not theirs. Thank you!
 - The AI assistants used to build and test this project, and the open **Model Context Protocol** that makes it all possible.
 
 *c3d-mcp is an independent, community project. It is not made by, affiliated with or endorsed by the makers of Cheetah3D.*
