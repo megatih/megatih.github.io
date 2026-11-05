@@ -6,7 +6,7 @@ cover-img: /assets/img/c3d-mcp/cover.jpg
 thumbnail-img: /assets/img/c3d-mcp/cyberpunk-cheetah-final.jpg
 share-img: /assets/img/c3d-mcp/cover.jpg
 tags: [cheetah3d, mcp, ai, 3d, macos, claude, codex, antigravity, projects]
-description: "c3d-mcp lets an AI assistant build, light and render scenes inside Cheetah3D on your Mac. A friendly guide with one-command install and two benchmark scenes: a Cornell Box and a Cyberpunk Diorama."
+description: "c3d-mcp lets an AI assistant build, light and render scenes inside Cheetah3D on your Mac. A friendly guide with a one-download Mac app and two benchmark scenes: a Cornell Box and a Cyberpunk Diorama."
 comments: true
 ---
 
@@ -71,52 +71,53 @@ I knew Cheetah3D can run JavaScript macros, but I had never really explored that
     <tr><td>Lights, cameras and backgrounds</td><td>Studio-style lighting and framing, with automatic checks that the picture is not too dark or empty.</td><td>"Add a warm key light and a soft purple backdrop."</td></tr>
     <tr><td>It looks at its own work</td><td>The AI renders a picture, studies it, and fixes its own mistakes. Optional finishing touches add glow, outlines and colour grading.</td><td>"Render it, tell me what looks wrong, then fix it."</td></tr>
     <tr><td>Animation and export</td><td>Keyframe animation, image sequences, and export to common formats such as FBX, DAE, STL and USDZ. It can also fetch free models from Poly Haven.</td><td>"Spin the model slowly and export it as FBX."</td></tr>
-    <tr><td>Safe by design</td><td>Works in a fresh scratch document, never overwrites your files, takes automatic checkpoints you can roll back to, and asks before anything risky.</td><td>"Undo that, go back to the checkpoint before the roof."</td></tr>
-    <tr><td>Easy to install</td><td>One command sets everything up, and the same command later updates, repairs or removes it. Works with Claude, Codex and Antigravity (and others), and comes with "skills" that teach your AI how to get the best out of it.</td><td>See the five steps below.</td></tr>
+    <tr><td>Safe by design</td><td>Works in a fresh scratch document, never overwrites your files, takes automatic checkpoints you can roll back to, and asks before anything risky (you choose how often it asks).</td><td>"Undo that, go back to the checkpoint before the roof."</td></tr>
+    <tr><td>Easy to install</td><td>One download, one app with a control panel: it installs the bridge, connects your AI apps, handles permissions, updates itself and can remove everything again. Works with Claude, Codex and Antigravity (and others), and comes with "skills" that teach your AI how to get the best out of it.</td><td>See the five steps below.</td></tr>
   </tbody>
 </table>
 
 ## What you need
 
-- A **Mac** with macOS 14 or newer.
+- A **Mac with Apple Silicon** and macOS 14 or newer. Nothing else to install: no Node.js, no Homebrew, no Terminal.
 - **Cheetah3D 8.1.3** (installed, and opened at least once). Get it from the [official Cheetah3D website](https://www.cheetah3d.com).
 - An **AI app that supports MCP**, for example Claude Desktop, Claude Code, Codex or Antigravity.
 
 ## Install in 5 easy steps
 
 <ol class="c3d-steps">
-  <li><strong>Open Terminal.</strong> Press <kbd>⌘</kbd> + <kbd>Space</kbd>, type <em>Terminal</em> and press Return. Paste this single line and press Return:<br><span class="c3d-cmd">curl -fsSL https://github.com/megatih/c3d-mcp/releases/latest/download/install.sh | bash</span></li>
-  <li><strong>Answer the questions.</strong> The installer checks your Mac and tells you what it finds. If a helper program called Node.js is missing, it offers to install it for you. It always asks first, and it never asks for your password.</li>
-  <li><strong>Allow the helper.</strong> While the installer runs, it opens <em>System Settings › Privacy &amp; Security</em> for you and waits. Switch on <strong>C3D Bridge Helper</strong> in the list (on the newest macOS the page is called <em>Device Control and Data Access</em>; on older versions it is <em>Accessibility</em>). This is what lets the AI press Cheetah3D's menu for you.</li>
-  <li><strong>Restart Cheetah3D once.</strong> When the installer finishes, quit and reopen Cheetah3D so it notices the new bridge. You only ever need to do this once. (If the installer says it skipped its test picture, just run the same line again after restarting to confirm that everything works.)</li>
-  <li><strong>Say hello to your AI.</strong> The installer connects the AI apps it finds on your Mac (it asks you first). Open one and try: <em>"Check that Cheetah3D is connected, then make a new scene with a red cube and render it."</em></li>
+  <li><strong>Download the app.</strong> Get <em>C3D-MCP-&lt;version&gt;.dmg</em> from the <a href="https://github.com/megatih/c3d-mcp/releases/latest">latest release</a>, open it and drag <strong>C3D MCP</strong> onto the <em>Applications</em> folder.</li>
+  <li><strong>Open it, and click "Open Anyway" once.</strong> macOS will say it cannot verify the app, because I sign it with my own certificate rather than a paid Apple Developer ID. Click <em>Done</em>, open <em>System Settings › Privacy &amp; Security</em>, scroll down, click <strong>Open Anyway</strong> next to "C3D MCP" and type your password. Then open the app again. You only do this once per Mac.</li>
+  <li><strong>Install the bridge and restart Cheetah3D.</strong> In the app, open <em>Bridge</em> and click <em>Install or update</em>. Then quit and reopen Cheetah3D once so it notices the new bridge.</li>
+  <li><strong>Connect your AI app.</strong> Open <em>AI clients</em> and click <em>Connect</em> next to Claude, Codex, Antigravity, Gemini or Cursor. Restart that AI app afterwards.</li>
+  <li><strong>Allow the app, then say hello to your AI.</strong> Open <em>Permissions</em>, click <em>Grant…</em> for Accessibility and switch on <strong>C3D MCP</strong> in System Settings. This is what lets the AI press Cheetah3D's menu for you. Then try: <em>"Check that Cheetah3D is connected, then make a new scene with a red cube and render it."</em></li>
 </ol>
 
 <div class="c3d-card">
-<p><strong>Want to read the installer first?</strong> Good idea! Download it with <span class="c3d-cmd">curl -fsSL https://github.com/megatih/c3d-mcp/releases/latest/download/install.sh -o install.sh</span>, open it in any text editor, then run it with <span class="c3d-cmd">bash install.sh</span>. You can also add <span class="c3d-cmd">--dry-run</span> to see what it <em>would</em> do without changing anything.</p>
-<p><strong>If something goes wrong:</strong> the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/INSTALL.md">install guide</a> and the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/TROUBLESHOOTING.md">troubleshooting page</a> cover the common problems. macOS may also block the helper the very first time because it is not yet "notarized" by Apple; the install guide shows the one-line fix.</p>
+<p><strong>Prefer one line in Terminal?</strong> This downloads the same app straight into Applications, checks its checksum, and macOS does not show the "Open Anyway" prompt for it: <span class="c3d-cmd">curl -fsSL https://github.com/megatih/c3d-mcp/releases/latest/download/get-c3d-mcp.sh | bash</span>. Want to read it first? Good idea! It is a short script: download it with <span class="c3d-cmd">curl -fsSL https://github.com/megatih/c3d-mcp/releases/latest/download/get-c3d-mcp.sh -o get-c3d-mcp.sh</span>, open it in any text editor, then run <span class="c3d-cmd">bash get-c3d-mcp.sh</span>.</p>
+<p><strong>If something goes wrong:</strong> the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/INSTALL.md">install guide</a> and the <a href="https://github.com/megatih/c3d-mcp/blob/main/docs/TROUBLESHOOTING.md">troubleshooting page</a> cover the common problems, and the app's <em>Overview</em> runs a health check that tells you what to fix.</p>
+<p><strong>Tired of "May I?" prompts?</strong> In <em>Permissions</em> you choose how often c3d-mcp asks before risky actions (the default asks once per action, not every time), and one button tells Claude Code to stop asking before every tool call.</p>
 </div>
 
 ## Update, repair or remove it later
 
-You do not need to remember anything special. **Run the same install line again** and the installer first looks at your Mac and tells you what it found: nothing yet (a fresh install), the current version, an older version, a half-finished install, or a copy that was set up by hand. Then it offers only the sensible choices:
+Everything lives in the same app, so there is nothing to remember:
 
 <table class="c3d-table">
   <thead><tr><th>You want to</th><th>What to do</th></tr></thead>
   <tbody>
-    <tr><td>Update</td><td>Run the install line again and pick <em>Update</em>. The helper program is replaced too, and if the new one does not start, the old one is put back automatically.</td></tr>
-    <tr><td>Repair</td><td>Pick <em>Repair</em>. It fixes only what is missing or broken and leaves everything else alone.</td></tr>
-    <tr><td>Start over</td><td>Pick <em>Reinstall</em>. It rewrites everything, but keeps your settings, backups and your own Cheetah3D scripts.</td></tr>
-    <tr><td>Just look</td><td><span class="c3d-cmd">c3d-mcp status</span> shows what is installed and what to run next. Add <span class="c3d-cmd">--dry-run</span> to any action to preview it.</td></tr>
-    <tr><td>Remove it</td><td>Pick <em>Uninstall</em> to remove the bridge and the helper, or <em>Uninstall everything</em> to also remove the skills, the AI app entries and the installer's own folder. It lists what will go and asks first. Your Cheetah3D scripts and backups are never touched.</td></tr>
+    <tr><td>Update</td><td>The app checks for new versions by itself. <em>Overview › Updates › Check now</em> does it on demand. Updates are signed, and the app only accepts an update with a valid signature.</td></tr>
+    <tr><td>Repair</td><td><em>Bridge › Repair</em> fixes only what is missing or broken and leaves everything else alone.</td></tr>
+    <tr><td>Just look</td><td><em>Overview</em> shows a health check of Cheetah3D, the bridge, the permissions and your AI apps, with a suggested fix for anything that is wrong.</td></tr>
+    <tr><td>Clean up an older install</td><td>If you installed an earlier version with the old install script, npm, Homebrew, the Claude Desktop extension or the Claude Code plugin, open <em>Cleanup</em>. It finds those leftovers and removes them (they go to the Trash).</td></tr>
+    <tr><td>Remove it</td><td><em>Bridge › Uninstall everything</em> removes the bridge, the skills and the AI app entries. Your Cheetah3D scripts and backups are never touched. Then drag the app to the Trash.</td></tr>
   </tbody>
 </table>
 
 <div class="c3d-card">
-<p><strong>One thing to expect after an update:</strong> the helper program is signed but not notarized by Apple, so macOS treats a new version as a new app and asks you to switch on <em>C3D Bridge Helper</em> in System Settings again. The installer tells you when that is needed and opens the right page.</p>
+<p><strong>About permissions after an update:</strong> every version is signed with the same certificate, so macOS should keep your Accessibility permission. If it ever asks again, switch <em>C3D MCP</em> off and on in System Settings.</p>
 </div>
 
-The installer also adds a set of **skills**: short guidebooks that teach your AI how to use Cheetah3D well. They are the reason the AI knows, for example, which way rotation works in Cheetah3D, or how to check a render before moving on.
+The app also installs a set of **skills**: short guidebooks that teach your AI how to use Cheetah3D well. They are the reason the AI knows, for example, which way rotation works in Cheetah3D, or how to check a render before moving on.
 
 ## Benchmark 1: the Cornell Box
 
@@ -199,7 +200,7 @@ And here is the finished scene opened in Cheetah3D itself, so you can see it rea
 
 ## Try it yourself
 
-Once everything is installed, here are three prompts to get you started:
+Once everything is set up, here are three prompts to get you started:
 
 1. *"Create a new Cheetah3D document, build a simple table with four legs and a wood material, light it, and render it."*
 2. *"Look at my current scene and tell me which objects have no material, then give them sensible ones."*
@@ -207,7 +208,7 @@ Once everything is installed, here are three prompts to get you started:
 
 <div class="c3d-btns">
   <a class="btn btn-primary btn-lg" href="https://github.com/megatih/c3d-mcp">The project on GitHub</a>
-  <a class="btn btn-outline-primary btn-lg" href="https://github.com/megatih/c3d-mcp/releases/latest">Download the latest release</a>
+  <a class="btn btn-outline-primary btn-lg" href="https://github.com/megatih/c3d-mcp/releases/latest">Download the app (DMG)</a>
   <a class="btn btn-outline-primary btn-lg" href="https://github.com/megatih/c3d-mcp/blob/main/docs/INSTALL.md">Install guide</a>
 </div>
 
