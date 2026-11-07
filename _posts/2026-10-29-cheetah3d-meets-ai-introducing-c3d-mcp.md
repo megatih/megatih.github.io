@@ -221,14 +221,14 @@ Claude Code did its research, I approved its plan, and it wrote the requirements
 After that I just watched the model grow in Cheetah3D, getting more detailed with every pass. Here is the Cheetah3D window after Claude had done five iterations on the scene, with the objects and materials it created listed on the right and at the bottom:
 
 <figure class="c3d-fig">
-  <img src="https://www.cheetah3d.com/forum/index.php?attachments/40982/" alt="Screenshot of the Cheetah3D window showing the YF-19 fighter jet in the 3D view after five iterations, with its materials along the bottom and a YF-19 group of objects (fuselage, nacelles, fans, wings) in the object list.">
+  <img src="/assets/img/c3d-mcp/yf19-cheetah-window.jpg" alt="Screenshot of the Cheetah3D window showing the YF-19 fighter jet in the 3D view after five iterations, with its materials along the bottom and a YF-19 group of objects (fuselage, nacelles, fans, wings) in the object list.">
   <figcaption>The Cheetah3D window after five iterations: the YF-19 is a normal, editable scene with named parts (fuselage, nacelles, fans, wings) and its own materials. Image from my <a href="https://www.cheetah3d.com/forum/index.php?threads/14716/post-130043">forum post</a>.</figcaption>
 </figure>
 
 And this is the Cheetah3D render made from that scene:
 
 <figure class="c3d-fig">
-  <img src="https://www.cheetah3d.com/forum/index.php?attachments/40983/" alt="Cheetah3D render of the Macross YF-19 fighter jet banking in flight against a golden-hour sky, with a tan and black panelled body, red markings, a glass canopy and swept wings.">
+  <img src="/assets/img/c3d-mcp/yf19-final-render.jpg" alt="Cheetah3D render of the Macross YF-19 fighter jet banking in flight against a golden-hour sky, with a tan and black panelled body, red markings, a glass canopy and swept wings.">
   <figcaption>The Cheetah3D render of the YF-19, banking against an evening sky like a promotional poster. Image from my <a href="https://www.cheetah3d.com/forum/index.php?threads/14716/post-130043">forum post</a>.</figcaption>
 </figure>
 
