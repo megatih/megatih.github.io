@@ -6,7 +6,7 @@ cover-img: /assets/img/c3d-mcp/cover.jpg
 thumbnail-img: /assets/img/c3d-mcp/cyberpunk-cheetah-final.jpg
 share-img: /assets/img/c3d-mcp/cover.jpg
 tags: [cheetah3d, mcp, ai, 3d, macos, claude, codex, antigravity, projects]
-description: "c3d-mcp lets an AI assistant build, light and render scenes inside Cheetah3D on your Mac. A friendly guide with a one-download Mac app and two benchmark scenes: a Cornell Box and a Cyberpunk Diorama."
+description: "c3d-mcp lets an AI assistant build, light and render scenes inside Cheetah3D on your Mac. A friendly guide with a one-download Mac app and three benchmark scenes: a Cornell Box, a Cyberpunk Diorama and a Macross YF-19 fighter jet."
 comments: true
 ---
 
@@ -197,6 +197,42 @@ And here is the finished scene opened in Cheetah3D itself, so you can see it rea
   <img src="/assets/img/c3d-mcp/cheetah-final-scene.jpg" alt="Screenshot of the Cheetah3D window with the finished cyberpunk building in the 3D view, the materials at the bottom and the list of objects on the right.">
   <figcaption>The finished scene loaded in Cheetah3D: a normal document you can open, edit, re-light and render yourself.</figcaption>
 </figure>
+
+## Benchmark 3: the Macross YF-19
+
+The third test is an example I also shared in the [official Cheetah3D forum thread about c3d-mcp](https://www.cheetah3d.com/forum/index.php?threads/14716/post-130043). This time there was no reference picture to match. I simply asked the AI to build the **YF-19**, the fighter jet from the anime *Macross*, as realistically and as detailed as it could.
+
+<div class="c3d-card">
+<p><strong>The setup:</strong> Cheetah3D 8.1.3, with <strong>Claude Code</strong> running in the Terminal as the MCP client. I used the <code>opusplan</code> model, which lets Claude Code automatically pick <strong>Opus 5.5</strong> for planning and <strong>Sonnet 5.5</strong> for the actual building.</p>
+</div>
+
+I started Claude Code like this:
+
+<p class="c3d-cmd">claude --model opusplan</p>
+
+Then I pressed SHIFT-TAB until I was in *Plan* mode and gave it this prompt:
+
+> I want to create the Macross YF-19 fighter jet as detailed as possible in Cheetah3D (c3d) using the c3d mcp. Build the model as accurately and as realistically as possible. It should look, from afar, at first glance, like it is real. That is the level of detail I want you to match. I want the lighting to be beautiful, every single minute detail, using an exciting camera angle that shows the entire fighter jet in flight like a promotional action poster for the jet. Every part of the jet should be built properly in Cheetah3D. Conduct extensive research and internet searches for blueprints, schematics, texture, materials and color schemes. There are a ton of photos and images, especially from popular anime, macross and robotech websites. Do a ton of research first, gather all of that, make sure that all of that research will feed into the build, and that you find everything you need before you start building. And then I need you to do more research until you know exactly how to make this beautiful in Cheetah3D. I don't want any blobs anywhere. And then I need you to actually QA your work. So do all of that research. You can spawn different agents, put all of that together first, then I want you to actually put together a prompt MD file. You can add it to this project folder and we will treat this as a PRD. Once this is done, I will use Claude Code's '/goal' to read the prompt MD and execute all of this.
+
+Claude Code did its research, I approved its plan, and it wrote the requirements document (a PRD, saved as a Markdown file). Then I set it to work with a single command:
+
+<p class="c3d-cmd">/goal Execute @YF-19_PRD.md</p>
+
+After that I just watched the model grow in Cheetah3D, getting more detailed with every pass. Here is the Cheetah3D window after Claude had done five iterations on the scene, with the objects and materials it created listed on the right and at the bottom:
+
+<figure class="c3d-fig">
+  <img src="https://www.cheetah3d.com/forum/index.php?attachments/40982/" alt="Screenshot of the Cheetah3D window showing the YF-19 fighter jet in the 3D view after five iterations, with its materials along the bottom and a YF-19 group of objects (fuselage, nacelles, fans, wings) in the object list.">
+  <figcaption>The Cheetah3D window after five iterations: the YF-19 is a normal, editable scene with named parts (fuselage, nacelles, fans, wings) and its own materials. Image from my <a href="https://www.cheetah3d.com/forum/index.php?threads/14716/post-130043">forum post</a>.</figcaption>
+</figure>
+
+And this is the Cheetah3D render made from that scene:
+
+<figure class="c3d-fig">
+  <img src="https://www.cheetah3d.com/forum/index.php?attachments/40983/" alt="Cheetah3D render of the Macross YF-19 fighter jet banking in flight against a golden-hour sky, with a tan and black panelled body, red markings, a glass canopy and swept wings.">
+  <figcaption>The Cheetah3D render of the YF-19, banking against an evening sky like a promotional poster. Image from my <a href="https://www.cheetah3d.com/forum/index.php?threads/14716/post-130043">forum post</a>.</figcaption>
+</figure>
+
+What I like about this test is how different it is from the other two. The Cornell Box was about lighting, the Cyberpunk Diorama was about copying a reference picture, and the YF-19 shows that you can hand the AI a big, loosely-defined creative goal, let it plan and research first, and then let it build for itself.
 
 ## Try it yourself
 
